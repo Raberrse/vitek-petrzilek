@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animation-container {
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.about-me-paragraphs > p > strong {
+    @apply font-normal text-[#6D6D6D]
+}
+
+/* Utility classes for inputs */
+#inputs {
+  @apply relative overflow-hidden w-full;
+}
+
+#inputs label {
+  @apply absolute duration-[200ms] left-0 bottom-3 -z-10 translate-y-[0px]; 
+}
+
+#inputs input {
+  @apply border-b font-normal border-[#A2A2A2] outline-none text-black z-10 bg-transparent w-full pb-2 pt-4;
+}
+
+#inputs .input-underline {
+  @apply absolute bottom-0 left-0 w-full h-[1.5px] bg-[#000000] duration-[300ms] z-10 -translate-x-full ease-in;
+}
+
+#inputs input:focus ~ .input-underline,
+#inputs  input[data-not-empty='true'] ~ .input-underline {
+  @apply translate-x-0 ease-out;
+}
+
+#inputs input:focus ~ label,
+#inputs input[data-not-empty='true'] ~ label {
+  @apply text-black translate-y-[-20px] text-[10px] duration-[300ms]
+}
+
+#navigation-container[data-black-path='false'] {
+  @apply text-white 
+}
+
+#navigation-container[data-black-path='true'] {
+  @apply text-black
+}
+
+#navigation-container[data-black-path='true'][data-is-open='true'] {
+  @apply text-white
+}
+
+
+#navigation-container[data-black-path='false'] .hamburger-menu{
+  @apply bg-white 
+}
+
+#navigation-container[data-black-path='true'] .hamburger-menu{
+  @apply bg-black 
+}
+
+#navigation-container[data-black-path='true'][data-is-open='true'] .hamburger-menu{
+  @apply bg-white 
+}

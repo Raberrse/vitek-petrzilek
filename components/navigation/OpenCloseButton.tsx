@@ -30,16 +30,16 @@ export default function OpenCloseButton({
         onClick={() => setIsOpen((prevState) => !prevState)}
       >
         <div
-          className={`hamburger-menu w-[27px] h-[4px] rounded-full duration-[300ms] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+          className={`hamburger-menu w-[27px] h-[4px] rounded-full absolute left-1/2 -translate-x-1/2 -translate-y-1/2 ${
             isOpen
               ? " rotate-[45deg] top-1/2 "
               : "rotate-[0deg] top-[calc(50%-4px)] "
           }`}
         />
         <div
-          className={`hamburger-menu w-[27px] h-[4px] rounded-full duration-[300ms] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+          className={`hamburger-menu w-[27px] h-[4px] rounded-full absolute left-1/2 -translate-x-1/2 -translate-y-1/2 ${
             isOpen
-              ? "rotate-[-45deg] top-1/2"
+              ? "rotate-[-45deg] top-1/2 "
               : "rotate-[0deg] top-[calc(50%+4px)] "
           }`}
         />

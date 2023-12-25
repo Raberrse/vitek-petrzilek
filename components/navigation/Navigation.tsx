@@ -13,13 +13,13 @@ export default function Navigation() {
       <div 
         id="navigation-container"
         className=" font-base flex justify-between items-start w-full max-w-[1200px] pt-10 text-[18px] "
-        data-black-path={pathname === '/o-mne' ? 'true' : 'false'}
+        data-black-path={pathname === '/o-mne' || pathname === '/vybaveni' ? 'true' : 'false'}
         data-is-open={isOpen ? 'true' : 'false'}
       >
         <Link 
           id="vitek-petrzilek"
           href={"/"} 
-          onClick={() => setIsOpen(false)} className="text-[16px] z-30  duration-[300ms]"
+          onClick={() => setIsOpen(false)} className="text-[16px] z-30  "
         >
           Vítek&nbsp;Petržílek
         </Link>

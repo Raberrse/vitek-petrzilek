@@ -4,6 +4,8 @@ import IGIcon  from './IGIcon'
 import FBIcon  from './FBIcon'
 import YTIcon  from './YTIcon'
 import VideoArrow  from './VideoArrow'
+import Quote  from './Quote'
+import ShortArrowSlideshow  from './ShortArrowSlideshow'
 
 export {
     Signature,
@@ -11,5 +13,7 @@ export {
     IGIcon,
     FBIcon,
     YTIcon,
-    VideoArrow
+    VideoArrow,
+    Quote,
+    ShortArrowSlideshow
 }

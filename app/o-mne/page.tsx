@@ -1,9 +1,10 @@
-import { AboutMe } from "@/components/about-me";
+import { AboutMe, PhotoGallery } from "@/components/about-me";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pb-[80px]">
       <AboutMe />
+      <PhotoGallery />
     </div>
   )
 }

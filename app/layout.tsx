@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="cs">
       <body className={`${helveticaNeue.className}`}>
         <header className="relative z-10">
           <Navigation />

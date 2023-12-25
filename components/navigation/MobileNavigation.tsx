@@ -25,10 +25,10 @@ export default function MobileNavigation({setIsOpen, additionalClasses}: MobileN
             ))}
             </ul>
 
-            <ul className='flex gap-4 items-center'>
+            <ul className='flex gap-5 items-center'>
             {iconItems.map((item, index) => (
                 <li key={index} className='flex'>
-                    <button>
+                    <button className='scale-[1.2]'>
                         {item.svg}
                     </button>
                 </li>

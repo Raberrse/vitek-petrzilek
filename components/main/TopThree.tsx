@@ -37,15 +37,16 @@ export default function TopThree() {
       <div className='flex h-[800px] max-lg:flex-col max-lg:h-[2400px] w-full'>
         {projects.map((project, index) => (
           <div key={index} className='relative flex-1 group/container '>
-            <div className='absolute top-0 left-0  w-full h-full duration-[200ms] lg:group-hover/container:backdrop-blur-[10px] z-10'>
-              <div className='bg-black w-full h-full opacity-0 duration-[200ms] lg:group-hover/container:opacity-[0.25] '/>
+            <div className='absolute top-0 left-0  w-full h-full opacity-0 duration-[200ms] lg:group-hover/container:opacity-[1] backdrop-blur-[10px] z-10'>
+              <div className='bg-black w-full h-full opacity-[0.25]'/>
             </div>
 
             <Image
               src={project.image}
               alt={project.alt}
               fill
-              sizes="(max-width: 768px) 140vw, 100vw"
+              placeholder='blur'
+              sizes="(max-width: 768px) 130vw, 100vw"
               className={`object-fit ${project.additionalClasses} relative z-0 object-cover`}
             />
 

@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
         <div className='relative w-full min-h-[500px] h-screen'>
-            <video id="myVideo" width={'100%'}  loop muted className='min-h-[500px] h-screen object-cover relative'>
+            <video id="myVideo" width={'100%'} autoPlay loop muted className='min-h-[500px] h-screen object-cover relative'>
                 <source src="hero_video.mp4" type="video/mp4" />
                 Váš prohlížeč nepodporuje video tag.
             </video>

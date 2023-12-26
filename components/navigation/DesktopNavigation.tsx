@@ -15,11 +15,11 @@ export default function DesktopNavigation({additionalClasses}: DesktopNavigation
         <div id='desktop-navigation-container' className='flex gap-7 items-center'>
             <ul className='flex gap-5'>
             {navigationItems.map((item, index) => (
-                <li key={index}>
-                <Link href={item.href} className={`relative text-[16px] overflow-clip`}>
+                <li key={index} className='relative overflow-hidden'>
+                <Link href={item.href} className={`relative text-[16px]`}>
                     {item.text}
-                    <span className={`underline-navigation absolute bottom-0 left-0 w-full bg-black h-[1px] duration-[200ms] ${pathname === item.href ? 'translate-x-0' : '-translate-x-full'}`}/>
                 </Link>
+                    <span className={`underline-navigation absolute bottom-0 left-0 w-full bg-black h-[1px] duration-[200ms] z-0 ${pathname === item.href ? 'translate-x-0' : '-translate-x-[calc(100%+2px)]'}`}/>
                 </li>
             ))}
             </ul>

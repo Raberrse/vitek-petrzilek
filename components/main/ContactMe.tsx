@@ -85,7 +85,7 @@ const ContactMe = () => {
         </div>
         <div className="flex flex-col w-full items-stretch gap-9">
           <textarea
-            className={`w-full resize-none relative focus:border-black duration-[300ms] outline-none text-black z-10 bg-transparent text-[16px] font-normal placeholder:font-light border border-[#A2A2A2] rounded-xl h-[400px] py-8 px-8
+            className={`w-full resize-none relative focus:border-black duration-[300ms] outline-none text-black z-10 bg-transparent text-[16px] font-normal placeholder:italic placeholder:font-light border border-[#A2A2A2] rounded-xl h-[400px] py-8 px-8
                         ${formState.message.value !== '' ? 'border-black' : ''}`}
             id="message"
             placeholder="Řekněte mi něco o vašem projektu"

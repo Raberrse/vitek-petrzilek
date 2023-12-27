@@ -102,3 +102,6 @@
   @apply bg-black
 }
 
+#navigation-container[data-black-path='true'] .social-icon {
+  @apply lg:fill-black
+}

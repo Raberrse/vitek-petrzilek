@@ -10,12 +10,12 @@ export default function EquipmentGallery() {
     <div className="px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px]">
       <div className="mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[110px] gap-x-[60px] justify-items-center">
         {pieces.map((piece, index) => (
-          <div key={index} className={`relative flex flex-col justify-start w-full gap-5 justify-self-auto`}>
+          <div key={index} className={`relative flex flex-col justify-start w-full gap-5 justify-self-auto ${oneRemainingItem && index === pieces.length - 1 ? 'lg:col-start-2' : ''}`}>
             <Image
             
               width={1000}
               height={640}
-              className="object-contain self-center max-w-[360px] h-auto"
+              className="object-contain self-center max-w-[360px] h-auto duration-200 "
               src={piece.image}
               alt={`${piece.imageAlt}`}
             />

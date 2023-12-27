@@ -5,7 +5,7 @@ import { AboutMeSlideshow } from '.'
 export default function AboutMe() {
   return (
     <div className='w-full py-[110px] flex items-center justify-center px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px]'>
-        <div className='flex max-lg:flex-col gap-14 justify-center w-full max-w-[1200px] items-center'>
+        <div className='flex gap-14 justify-center w-full max-w-[1200px] items-center'>
             <div className='w-full'>
                 <div className='flex flex-col gap-[30px]'>
                     <h2 className='text-[38px] font-bold'>O mně</h2>
@@ -28,7 +28,7 @@ export default function AboutMe() {
 
             </div>
 
-            <div className='w-full flex items-center justify-center'>
+            <div className='w-full flex items-center justify-center  max-lg:hidden'>
                 <AboutMeSlideshow />
             </div>
         </div>

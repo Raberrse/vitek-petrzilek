@@ -1,6 +1,9 @@
+import { VideoGallery } from "@/components/portfolio";
+
 export default function Home() {
   return (
-    <div className="pb-[80px]">
+    <div className="relative z-0">
+      <VideoGallery />
     </div>
   )
 }

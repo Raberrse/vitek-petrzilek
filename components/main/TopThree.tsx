@@ -46,7 +46,8 @@ export default function TopThree() {
               alt={project.alt}
               fill
               placeholder='blur'
-              sizes="(max-width: 768px) 130vw, 100vw"
+              sizes="(min-width: 1040px) 33.32vw, 100vw"
+              quality={100}
               className={`object-fit ${project.additionalClasses} relative z-0 object-cover`}
             />
 

@@ -15,8 +15,7 @@ export default function Logos() {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                placeholder='blur'
-                className='object-contain duration-[400ms] hover:grayscale-0 active:grayscale-0 grayscale'
+                className='object-contain duration-[400ms] hover:grayscale-0 active:grayscale-0 grayscale  bg-gray-100'
             />
             </Link>
             ))}
@@ -31,7 +30,6 @@ export default function Logos() {
                     alt={image.alt}
                     width={image.width}
                     height={image.height}
-                    placeholder='blur'
                     className='object-contain duration-[400ms] active:grayscale-0 grayscale'
                 />
                 </Link>

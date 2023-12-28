@@ -34,7 +34,7 @@ export default function PhotoGallery() {
                 width={600}
                 height={394}
                 placeholder="blur"
-                className='object-cover w-full h-full'
+                className='object-cover '
                 src={file.component}
                 alt={`Fotka ${index + 1}`}
               />

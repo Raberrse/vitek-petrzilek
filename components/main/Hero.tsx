@@ -4,7 +4,7 @@ import { HeroArrow, Signature } from '../svg'
 export default function Hero() {
   return (
     <div>
-        <div className='relative w-full min-h-[500px] h-screen'>
+        <div className='relative w-full min-h-[500px] h-screen z-0'>
             <video id="myVideo" width={'100%'} autoPlay loop muted className='min-h-[500px] h-screen object-cover relative bg-[#000000c4]'>
                 <source src="hero_video.mp4" type="video/mp4" />
                 Váš prohlížeč nepodporuje video tag.

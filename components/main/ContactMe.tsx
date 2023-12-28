@@ -52,7 +52,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-14 px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] pb-20">
+    <div id="kontaktovat" className="flex flex-col items-center justify-center gap-14 px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] pb-20 pt-[70px]">
       <h2 className="text-center text-[32px] font-bold">
         Neváhejte mi napsat!
       </h2>
@@ -81,7 +81,6 @@ const ContactMe = () => {
               </div>
             ))}
           </div>
-          <span className="input-underline">*reCaptcha anti-bot*</span>
         </div>
         <div className="flex flex-col w-full items-stretch gap-9">
           <textarea
@@ -96,7 +95,7 @@ const ContactMe = () => {
           />
           <button
             type="submit"
-            className="text-[18px] border border-black disabled:border-[#656565] font-medium w-fit max-md:w-full py-5 px-12 rounded-xl self-end text-black disabled:text-[#656565]"
+            className="text-[18px] border border-black font-medium w-fit max-md:w-full py-5 px-12 rounded-xl self-end text-black disabled:text-[#656565]"
             disabled={isSendButtonDisabled()}
           >
             Odeslat

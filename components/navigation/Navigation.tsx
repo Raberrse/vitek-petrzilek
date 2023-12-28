@@ -9,7 +9,7 @@ export default function Navigation() {
   const pathname = usePathname()
 
   return (
-    <div className="absolute flex justify-center w-full px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] ">
+    <div className="absolute flex justify-center w-full px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] z-10">
       <div 
         id="navigation-container"
         className=" font-base flex justify-between items-start w-full max-w-[1200px] pt-10 text-[18px] "

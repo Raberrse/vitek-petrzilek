@@ -8,7 +8,7 @@ interface NavigationItem {
 
 export const navigationItems: NavigationItem[] = [
   { text: "Portfolio", href: "/portfolio" },
-  { text: "Kontakt", href: "/#" },
+  { text: "Kontakt", href: "/#kontaktovat" },
   { text: "O\u00A0mně", href: "/o-mne" },
   { text: "Vybavení", href: "/vybaveni" },
 ];

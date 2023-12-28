@@ -4,7 +4,7 @@ import { Navigation } from "@/components/navigation";
 export default function Home() {
   return (
     <>
-      <main className="relative z-0 overflow-hidden">
+      <main className="overflow-hidden">
         <Hero />
         <Logos />
         <AboutMe />

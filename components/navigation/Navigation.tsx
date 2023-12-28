@@ -13,7 +13,7 @@ export default function Navigation() {
       <div 
         id="navigation-container"
         className=" font-base flex justify-between items-start w-full max-w-[1200px] pt-10 text-[18px] "
-        data-black-path={pathname === '/o-mne' || pathname === '/vybaveni' ? 'true' : 'false'}
+        data-white-path={pathname === '/portfolio' || pathname === '/' ? 'true' : 'false'}
         data-is-open={isOpen ? 'true' : 'false'}
       >
         <Link 

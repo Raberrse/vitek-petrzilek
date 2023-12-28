@@ -66,27 +66,27 @@
 }
 
 
-#navigation-container[data-black-path='false'] {
+#navigation-container[data-white-path='true'] {
   @apply text-white
 }
 
-#navigation-container[data-black-path='true'] {
+#navigation-container[data-white-path='false'] {
   @apply text-black 
 }
 
-#navigation-container[data-black-path='true'][data-is-open='true'] {
+#navigation-container[data-white-path='false'][data-is-open='true'] {
   @apply text-white
 }
 
-#navigation-container[data-black-path='false'] .hamburger-menu{
+#navigation-container[data-white-path='true'] .hamburger-menu{
   @apply bg-white transition-not-color
 }
 
-#navigation-container[data-black-path='true'] .hamburger-menu{
+#navigation-container[data-white-path='false'] .hamburger-menu{
   @apply bg-black transition-not-color
 }
 
-#navigation-container[data-black-path='true'][data-is-open='true'] .hamburger-menu{
+#navigation-container[data-white-path='false'][data-is-open='true'] .hamburger-menu{
   @apply bg-white transition-not-color
 } 
 
@@ -94,15 +94,15 @@
   @apply bg-white transition-not-color
 }
 
-#navigation-container[data-black-path='false'] .underline-navigation {
+#navigation-container[data-white-path='true'] .underline-navigation {
   @apply bg-white 
 }
 
-#navigation-container[data-black-path='true'] .underline-navigation {
+#navigation-container[data-white-path='false'] .underline-navigation {
   @apply bg-black
 }
 
-#navigation-container[data-black-path='true'] .social-icon {
+#navigation-container[data-white-path='false'] .social-icon {
   @apply lg:fill-black
 }
 

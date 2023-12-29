@@ -2,6 +2,8 @@ interface PageProps {
   params: {id: string}
 }
 
+export const dynamicParams = true
+
 export default function Page({ params }: PageProps) {
   const {id} = params
 

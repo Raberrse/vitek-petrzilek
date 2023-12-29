@@ -2,7 +2,8 @@ interface PageProps {
   params: {id: string}
 }
 
-export const dynamicParams = true
+export const dynamicParams = false
+export const dynamic = 'force-static';
 
 export default function Page({ params }: PageProps) {
   const {id} = params

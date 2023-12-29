@@ -1,8 +1,10 @@
 interface PageProps {
-  id: string;
+  params: {id: string}
 }
 
-function Page({ id }: PageProps) {
+export default function Page({ params }: PageProps) {
+  const {id} = params
+
   return (
     <div>
       <h1>{id}</h1>
@@ -10,26 +12,20 @@ function Page({ id }: PageProps) {
   );
 }
 
-export async function getStaticPaths() {
-  const paths = [
-    { params: { id: '1' } },
-    { params: { id: '2' } },
-    { params: { id: '3' } },
-  ];
+const paths = [
+  { params: { id: "1" } },
+  { params: { id: "2" } },
+  { params: { id: "3" } },
+  { params: { id: "4" } },
+  { params: { id: "5" } },
+  { params: { id: "6" } },
+  { params: { id: "7" } },
+  { params: { id: "8" } },
+  { params: { id: "9" } },
+];
 
-  return { paths, fallback: false };
+export function generateStaticParams() {
+  return paths.map((path) => ({
+    id: path.params.id,
+  }));
 }
-
-export async function getStaticProps({ params }: {params: {id: string}}) {
-  const id = params.id;
-  // Fetch data based on the id if needed
-
-  // Return props
-  return {
-    props: {
-      id,
-    },
-  };
-}
-
-export default Page;

@@ -29,9 +29,9 @@ const paths = [
   { params: { id: "6" } },
   { params: { id: "7" } },
   { params: { id: "8" } },
-  { params: { id: "9" } },
 ];
 
+//* Next.js bug - generateStaticParams() not working with parallel routes -> defaults to dynamic
 export function generateStaticParams() {
   return paths.map((path) => ({
     id: path.params.id,

@@ -6,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode
   videos: React.ReactNode
 }) {
-  console.log(children)
+  
   return (
     <div>
         {children}

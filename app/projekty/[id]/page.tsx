@@ -21,13 +21,13 @@ export default function Page({ params }: PageProps) {
   );
 }
 
-
 const paths = [
   { params: { id: "0" } },
   { params: { id: "1" } },
   { params: { id: "2" } },
 ];
 
+//* Next.js bug - generateStaticParams() not working with parallel routes -> defaults to dynamic
 export function generateStaticParams() {
   return paths.map((path) => ({
     id: path.params.id,

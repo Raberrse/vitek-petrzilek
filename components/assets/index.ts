@@ -1,5 +1,5 @@
-import VideoPlayer from './VideoPlayer'
+import VideoPlayerParallel from './VideoPlayerParallel'
 
 export {
-    VideoPlayer
+    VideoPlayerParallel
 }

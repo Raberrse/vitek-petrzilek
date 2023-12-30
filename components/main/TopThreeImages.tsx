@@ -6,10 +6,7 @@ import image1 from '../../public/bg/TOP3_thajsko.jpg';
 import image2 from '../../public/bg/TOP3_vyrava.jpg';
 import image3 from '../../public/bg/TOP3_kolobreh.jpg';
 import { VideoArrow } from '../svg';
-
-interface TopThreeImagesProps {
-    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
+import { useRouter } from 'next/navigation';
 
 const projects = [
     {
@@ -21,7 +18,7 @@ const projects = [
     {
       image: image2,
       alt: 'Festival Výrava x MOK',
-      title: 'Festival Výrava\u00A0x MOK',
+      title: 'Festival Výrava x\u00A0MOK',
       additionalClasses: ''
     },
     {
@@ -32,8 +29,9 @@ const projects = [
     },
   ];
 
-export default function TopThreeImages({setIsOpen}: TopThreeImagesProps) {
+export default function TopThreeImages() {
     const [isLoaded, setIsLoaded] = useState(false)
+    const router = useRouter()
 
   return (
     <>
@@ -60,7 +58,7 @@ export default function TopThreeImages({setIsOpen}: TopThreeImagesProps) {
               </h3>
               <div className={`duration-[200ms] w-10 lg:group-hover/container:h-10 h-0 max-lg:h-10`}>
               <button
-                onClick={() => setIsOpen(true)}
+                onClick={() => router.push(`/projekty/${index}`, { scroll: false })}
                 className="group/button -translate-x-1/2 left-1/2 w-[48px] h-[48px] relative flex items-center justify-center border-[1px] border-white rounded-full lg:group-hover/container:opacity-100 lg:hover:bg-white active:bg-white active:duration-0 max-lg:opacity-100 opacity-0 duration-[200ms] "
               >
                 <VideoArrow

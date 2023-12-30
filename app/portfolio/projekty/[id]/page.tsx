@@ -8,24 +8,28 @@ interface PageProps {
 export const dynamicParams = false
 export const dynamic = 'force-static';
 
-const array = projects.slice(0, 3)
-
 export default function Page({ params }: PageProps) {
   const {id} = params
-  const videoLink = array[parseInt(id)].videoLink
+  const videoLink = projects[parseInt(id)].videoLink
   
   return (
     <div className="bg-[#484848] fixed top-0 left-0 w-full h-screen z-30">
-      <Video videoLink={videoLink} />
+      <Video defaultRoute="/portfolio" videoLink={videoLink} />
     </div>
   );
 }
-
 
 const paths = [
   { params: { id: "0" } },
   { params: { id: "1" } },
   { params: { id: "2" } },
+  { params: { id: "3" } },
+  { params: { id: "4" } },
+  { params: { id: "5" } },
+  { params: { id: "6" } },
+  { params: { id: "7" } },
+  { params: { id: "8" } },
+  { params: { id: "9" } },
 ];
 
 export function generateStaticParams() {

@@ -1,5 +1,4 @@
 import { AboutMe, ContactMe, Hero, Logos, ReferenceLetters, TopThree } from "@/components/main";
-import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (

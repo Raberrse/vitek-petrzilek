@@ -19,7 +19,7 @@ export default function DesktopNavigation({additionalClasses}: DesktopNavigation
                 <Link href={item.href} className={`relative text-[16px]`}>
                     {item.text}
                 </Link>
-                    <span className={`mb-[4px] underline-navigation absolute bottom-0 left-0 w-full bg-black h-[1px] duration-[200ms] z-0 ${pathname === item.href ? 'translate-x-0' : '-translate-x-[calc(100%+2px)]'}`}/>
+                    <span className={`mb-[4px] underline-navigation absolute bottom-0 left-0 w-full bg-black h-[1px]  z-0 ${pathname === item.href ? 'translate-x-0' : '-translate-x-[calc(100%+2px)]'}`}/>
                 </li>
             ))}
             </ul>

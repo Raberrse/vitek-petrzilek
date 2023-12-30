@@ -16,11 +16,16 @@
   }
 
   .animation-slideshow {
-    animation: slideShow 200ms linear forwards;
+    animation: fadeInOpacity 200ms linear forwards;
     opacity: 0;
   }
 
-  @keyframes slideShow {
+  .fade-in-opacity {
+    animation: fadeInOpacity 300ms linear forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInOpacity {
     0% {
       opacity: 0;
     }
@@ -52,7 +57,7 @@
 
 #inputs input:focus ~ .input-underline,
 #inputs  input[data-not-empty='true'] ~ .input-underline {
-  @apply translate-x-0 ease-out;
+  @apply translate-x-0 ease-out ;
 }
 
 #inputs input:focus ~ label,

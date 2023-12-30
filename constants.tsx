@@ -176,3 +176,111 @@ export const pieces = [
     imageAlt: "Aputure Amaran AL-F7",
   },
 ];
+
+import One from "./public/bg/TOP3_thajsko.jpg";
+import Two from "./public/bg/TOP3_vyrava.jpg";
+import Three from "./public/bg/TOP3_kolobreh.jpg";
+import Four from "./public/bg/CT.jpg";
+import Five from "./public/bg/Dalesice.jpg";
+import Six from "./public/bg/Bezdrev.jpg";
+import Seven from "./public/bg/kdekoliv.jpg";
+import Eight from "./public/bg/Kvetopady.jpg";
+import Nine from "./public/bg/enteria.jpg";
+
+export const projects = [
+  {
+    image: One,
+    alt: "Mistroství světa v Thajsku",
+    title: "Mistroství světa v\u00A0Thajsku",
+    description: "3-denní mistrovství Česka v paddleboardingu s rozhovory.",
+    typeDate: "2022 | Event",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/ynCSr-BItmg?si=FCg8UyI_fYLyF_GA",
+    idPathname: "mistrostvi-sveta-v-thajsku",
+  },
+  {
+    image: Two,
+    alt: "Festival Výrava x MOK",
+    title: "Festival Výrava x\u00A0MOK",
+    description:
+      "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
+    typeDate: "2023 | Event",
+    additionalClasses: "",
+    videoLink: "https://youtube.com/shorts/4X1N8LSg8JM?feature=share",
+    idPathname: "festival-vyrava-x-mok",
+  },
+  {
+    image: Three,
+    alt: "Kolobřeh paddleboardové závody",
+    title: "Kolobřeh paddleboardové závody",
+    description:
+      "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
+    typeDate: "2023 | Event",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/pC8w-qEUHcI?si=IFc7ItKm9_SvqQZQ",
+    idPathname: "kolobreh-paddleboardove-zavody",
+  },
+  {
+    image: Four,
+    alt: "Para paddleboarding ČT",
+    title: "Para paddleboarding ČT",
+    description:
+      "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
+    typeDate: "2022 | Event",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/JBC4DJ-iBYM?si=no-_TB72geZxW5yM",
+    idPathname: "para-paddleboarding-ct",
+  },
+  {
+    image: Five,
+    alt: "Mistrovství ČR Dalešice",
+    title: "Mistrovství ČR Dalešice",
+    description: "3-denní mistrovství Česka v paddleboardingu s rozhovory.",
+    typeDate: "2022 | Reportáž",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/dDrmE87NTMM?si=4LI746ivhqXmjwpa",
+    idPathname: "mistrovstvi-cr-dalesice",
+  },
+  {
+    image: Six,
+    alt: "Mistrovství ČR v Bezdrev",
+    title: "Mistrovství ČR v\u00A0Bezdrev",
+    description:
+      "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
+    typeDate: "2022 | Reportáž",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/976irkfdVkk?si=HxYMvBLwEKDcfwDG",
+    idPathname: "mistrovstvi-cr-v-bezdrev",
+  },
+  {
+    image: Seven,
+    alt: "Pádlujte kdekoliv",
+    title: "Pádlujte kdekoliv",
+    description: "Video do reklamní kampaně Pádlujte kdekoliv.",
+    typeDate: "2022 | Branding",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/dc08A5Nzh9A?si=x2wKFANGBorzrd0K",
+    idPathname: "padlujte-kdekoliv",
+  },
+  {
+    image: Eight,
+    alt: "Květopády",
+    title: "Květopády",
+    description: "Květopády v Zahradě nebeského nefritu",
+    typeDate: "2022 | Dokumentační video",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/xYUh__-LSa8?si=zxR2WIye9FUn05uH",
+    idPathname: "kvetopady",
+  },
+  {
+    image: Nine,
+    alt: "Entreria byty Thera",
+    title: "Entreria byty Thera",
+    description:
+      "Krátký sestřih jak probíhá vystavba bytových domů Thera v Hradci Králové.",
+    typeDate: "2023 | Dokumentační video",
+    additionalClasses: "",
+    videoLink: "https://www.youtube.com/embed/8nqu4mHd5mM?si=g-Ms_nYvLAqEu2E_",
+    idPathname: "enteria-byty-thera",
+  },
+];

@@ -2,110 +2,13 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import One from "../../public/bg/TOP3_thajsko.jpg";
-import Two from "../../public/bg/TOP3_vyrava.jpg";
-import Three from "../../public/bg/TOP3_kolobreh.jpg";
-import Four from "../../public/bg/CT.jpg";
-import Five from "../../public/bg/Dalesice.jpg";
-import Six from "../../public/bg/Bezdrev.jpg";
-import Seven from "../../public/bg/kdekoliv.jpg";
-import Eight from "../../public/bg/Kvetopady.jpg";
-import Nine from "../../public/bg/enteria.jpg";
 import { VideoArrow } from "../svg";
-import { CSSTransition } from "react-transition-group";
-import { VideoPlayer } from "../assets";
-
-const projects = [
-  {
-    image: One,
-    alt: "Mistroství světa v Thajsku",
-    title: "Mistroství světa v\u00A0Thajsku",
-    description: "3-denní mistrovství Česka v paddleboardingu s rozhovory.",
-    typeDate: "2022 | Event",
-    additionalClasses: "",
-  },
-  {
-    image: Two,
-    alt: "Festival Výrava x MOK",
-    title: "Festival Výrava\u00A0x MOK",
-    description:
-      "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
-    typeDate: "2023 | Event",
-    additionalClasses: "",
-  },
-  {
-    image: Three,
-    alt: "Kolobřeh paddleboardové závody",
-    title: "Kolobřeh paddleboardové závody",
-    description:
-      "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
-    typeDate: "2022 | Reportáž",
-    additionalClasses: "",
-  },
-  {
-    image: Four,
-    alt: "Para paddleboarding ČT",
-    title: "Para paddleboarding ČT",
-    description:
-      "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
-    typeDate: "2022 | Event",
-    additionalClasses: "",
-  },
-  {
-    image: Five,
-    alt: "Mistrovství ČR Dalešice",
-    title: "Mistrovství ČR Dalešice",
-    description: "3-denní mistrovství Česka v paddleboardingu s rozhovory.",
-    typeDate: "2022 | Reportáž",
-    additionalClasses: "",
-  },
-  {
-    image: Six,
-    alt: "Mistrovství ČR v\u00A0Bezdrev",
-    title: "Mistrovství ČR v\u00A0Bezdrev",
-    description:
-      "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
-    typeDate: "2022 | Reportáž",
-    additionalClasses: "",
-  },
-  {
-    image: Seven,
-    alt: "Pádlujte kdekoliv",
-    title: "Pádlujte kdekoliv",
-    description: "Video do reklamní kampaně Pádlujte kdekoliv.",
-    typeDate: "2022 | Branding",
-    additionalClasses: "",
-  },
-  {
-    image: Eight,
-    alt: "Květopády",
-    title: "Květopády",
-    description: "Květopády v Zahradě nebeského nefritu",
-    typeDate: "2022 | Dokumentační video",
-    additionalClasses: "",
-  },
-  {
-    image: Nine,
-    alt: "Entreria byty Thera",
-    title: "Entreria byty Thera",
-    description:
-      "Krátký sestřih jak probíhá vystavba bytových domů Thera v Hradci Králové.",
-    typeDate: "2023 | Dokumentační video",
-    additionalClasses: "",
-  },
-];
+import { projects } from "@/constants";
+import { useRouter } from "next/navigation";
 
 export default function VideoGallery() {
-  const [isOpen, setIsOpen] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "visible";
-
-    return () => {
-      document.body.style.overflow = "visible";
-    };
-  }, [isOpen]);
+  const router = useRouter()
 
   const oddClasses = [
     "max-lg:row-span-2",
@@ -124,25 +27,6 @@ export default function VideoGallery() {
 
   return (
     <>
-      
-      <CSSTransition
-        in={isOpen}
-        timeout={{ enter: 0, exit: 300 }}
-        unmountOnExit
-      >
-        {(state) => (
-          <VideoPlayer
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            additionalClasses={` duration-[300ms] ${
-              state === "entered"
-                ? "opacity-100 "
-                : "opacity-0 "
-            }`}
-          />
-        )}
-      </CSSTransition>
-
       <div className="relative z-0">
         <div>
           {Array(numRows)
@@ -163,7 +47,6 @@ export default function VideoGallery() {
                           : evenClasses[projectIndex]
                       }`}
                     >
-                      
 
                       <Image
                         src={project.image}
@@ -192,8 +75,8 @@ export default function VideoGallery() {
                               </span>
                             </div>
                             <div className={`duration-[200ms] w-10 h-0 lg:group-hover/container:h-10 max-lg:h-10`}>
-                              <button
-                                onClick={() => setIsOpen(true)}
+                            <button
+                                onClick={() => router.push(`/portfolio/projekty/${(rowIndex * itemsPerRow + projectIndex)}`, { scroll: false })}
                                 className="group/button -translate-x-1/2 left-1/2 w-[48px] h-[48px] relative flex items-center justify-center border-[1px] border-white rounded-full lg:group-hover/container:opacity-100 lg:hover:bg-white active:bg-white active:duration-0 max-lg:opacity-100 opacity-0 duration-[200ms] "
                               >
                                 <VideoArrow

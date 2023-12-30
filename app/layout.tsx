@@ -24,8 +24,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  projects
 }: {
   children: React.ReactNode
+  projects: React.ReactNode
 }) {
   return (
     <html lang="cs">
@@ -34,6 +36,7 @@ export default function RootLayout({
           <Navigation />
         </header>
           {children}
+          {projects}
         <footer>
           <Footer />
         </footer>

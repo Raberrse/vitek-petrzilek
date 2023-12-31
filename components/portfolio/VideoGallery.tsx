@@ -34,7 +34,7 @@ export default function VideoGallery() {
             .map((_, rowIndex) => (
               <div
                 key={rowIndex}
-                className="grid grid-cols-2 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-4 h-[800px] max-lg:h-[1800px]"
+                className="grid grid-cols-2 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-4 h-screen max-lg:h-[1800px]"
               >
                 {projects
                   .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)

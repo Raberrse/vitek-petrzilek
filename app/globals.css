@@ -25,6 +25,11 @@
     opacity: 0;
   }
 
+  .fade-in-opacity-signature {
+    animation: fadeInOpacity 1250ms 300ms ease-in-out forwards;
+    opacity: 0;
+  }
+
   @keyframes fadeInOpacity {
     0% {
       opacity: 0;

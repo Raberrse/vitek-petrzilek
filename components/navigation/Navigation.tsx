@@ -19,6 +19,7 @@ export default function Navigation() {
         <Link 
           id="vitek-petrzilek"
           href={"/"} 
+          aria-label='Domů'
           onClick={() => setIsOpen(false)} className="text-[16px] z-30  "
         >
           Vítek&nbsp;Petržílek

@@ -30,6 +30,7 @@ export default function AboutMeSlideshow() {
           className={`p-3 ${currentImage === 0 ? 'opacity-0 ' : 'opacity-100'} duration-200`} 
           onClick={prevImage}
           disabled={currentImage === 0}
+          aria-label="Předchozí fotka"
         >
           <ShortArrowSlideshow width="10px" additionalClasses="rotate-180" />
         </button>
@@ -64,6 +65,7 @@ export default function AboutMeSlideshow() {
           className={`p-3 ${currentImage === 3 ? 'opacity-0 ' : 'opacity-100'} duration-200`} 
           onClick={nextImage}
           disabled={currentImage === 3}
+          aria-label="Další fotka"
         >
           <ShortArrowSlideshow width="10px" />
         </button>

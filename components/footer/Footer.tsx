@@ -10,14 +10,14 @@ export default function Footer() {
             ©&nbsp;2023&nbsp;Vítek&nbsp;Petržílek
         </span>
 
-        <Link href={'/'}>
+        <Link aria-label={'Domů'}  href={'/'}>
             <Signature additionalClasses='relative' height='100%' width='60px' />
         </Link>
         
         <ul className='flex gap-3 items-center'>
             {iconItems.map((item, index) => (
                 <li key={index} className=''>
-                    <a href={item.href} target='_black'>
+                    <a aria-label={item.label} href={item.href} target='_black'>
                         {item.svg}
                     </a>
                 </li>

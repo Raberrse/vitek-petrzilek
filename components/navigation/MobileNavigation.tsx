@@ -18,7 +18,7 @@ export default function MobileNavigation({setIsOpen, additionalClasses}: MobileN
             <ul className='flex flex-col gap-4'>
             {navigationItems.map((item, index) => (
                 <li key={index}>
-                    <Link href={item.href} onClick={() => setIsOpen(false)} className='text-[20px]'>
+                    <Link aria-label={item.text} href={item.href} onClick={() => setIsOpen(false)} className='text-[20px]'>
                         {item.text}
                     </Link>
                 </li>
@@ -28,7 +28,7 @@ export default function MobileNavigation({setIsOpen, additionalClasses}: MobileN
             <ul className='flex gap-5 items-center'>
             {iconItems.map((item, index) => (
                 <li key={index} className='flex'>
-                    <a href={item.href} target='_black' className='scale-[1.2]'>
+                    <a aria-label={item.label} href={item.href} target='_black' className='scale-[1.2]'>
                         {item.svg}
                     </a>
                 </li>

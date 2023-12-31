@@ -28,6 +28,7 @@ export default function OpenCloseButton({
       <button
         className="relative z-20 w-8 h-8 translate-y-[-20%]"
         onClick={() => setIsOpen((prevState) => !prevState)}
+        aria-label='Menu'
       >
         <div
           className={`hamburger-menu w-[27px] h-[4px] rounded-full absolute left-1/2 -translate-x-1/2 -translate-y-1/2 ${

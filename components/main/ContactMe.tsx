@@ -10,10 +10,10 @@ interface FormState {
 }
 
 const formFields = [
-  { id: "name", label: "Jméno", type: "text" },
+  { id: "name", label: "Jméno *", type: "text" },
+  { id: "email", label: "E-mail *", type: "text" },
+  { id: "phone-number", label: "Tel. číslo *", type: "text" },
   { id: "company", label: "Název firmy", type: "text" },
-  { id: "email", label: "E-mail", type: "text" },
-  { id: "phone-number", label: "Tel. číslo", type: "text" },
 ];
 
 const ContactMe = () => {
@@ -42,29 +42,44 @@ const ContactMe = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-
-    const isFormValid = Object.keys(formState).every(
-      (key) => key === "message" || formState[key].value.trim() !== ""
-    );
-
-    setFormState((prevState) => {
-      const updatedFormState: FormState = {};
-      for (const key in prevState) {
-        updatedFormState[key] = {
-          ...prevState[key],
-          isValid: key === "message" || prevState[key].value.trim() !== "",
-        };
+  
+    let isFormValid = true;
+  
+    const updatedFormState = { ...formState };
+  
+    // Validate all fields except "company" and "message"
+    for (const field of formFields) {
+      if (field.id !== "company" && field.id !== "message") {
+        const value = formState[field.id].value.trim();
+  
+        // Check for empty values
+        if (value === "") {
+          isFormValid = false;
+          updatedFormState[field.id].isValid = false;
+        } else {
+          updatedFormState[field.id].isValid = true;
+        }
+  
+        // Validate email field
+        if (field.id === "email") {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(value)) {
+            isFormValid = false;
+            updatedFormState[field.id].isValid = false;
+          }
+        }
       }
-      return updatedFormState;
-    });
-
+    }
+  
+    setFormState(updatedFormState);
+  
     if (isFormValid) {
       setIsSubmited(true);
       console.log("Form is valid. Submitting...");
     } else {
       if (buttonRef.current) {
         buttonRef.current.classList.add("errorShake");
-
+  
         // Remove the errorShake class after the animation duration (adjust the timeout as needed)
         setTimeout(() => {
           if (buttonRef.current) {
@@ -100,9 +115,9 @@ const ContactMe = () => {
                     handleInputChange(field.id, e.target.value)
                   }
                   data-not-empty={
-                    formState[field.id].value.trim() !== "" ? "true" : "false"
+                    formState[field.id].value.trim() !== "" ? "true" : "false" 
                   }
-                  data-not-valid={!formState[field.id].isValid}
+                  data-not-valid={!formState[field.id].isValid && field.id !== 'company'}
                   disabled={isSubmited}
                 ></input>
                 <label htmlFor={field.id}>{field.label}</label>

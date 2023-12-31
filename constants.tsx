@@ -207,7 +207,7 @@ export const projects = [
       "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
     typeDate: "2023 | Event",
     additionalClasses: "",
-    videoLink: "https://youtube.com/shorts/4X1N8LSg8JM?feature=share",
+    videoLink: "https://www.youtube.com/embed/9BTZeqhLkjg?si=STS9B6x1-dtbd7OV",
     idPathname: "festival-vyrava-x-mok",
   },
   {

@@ -17,9 +17,9 @@ export default function Footer() {
         <ul className='flex gap-3 items-center'>
             {iconItems.map((item, index) => (
                 <li key={index} className=''>
-                <button>
-                    {item.svg}
-                </button>
+                    <a href={item.href} target='_black'>
+                        {item.svg}
+                    </a>
                 </li>
             ))}
         </ul>

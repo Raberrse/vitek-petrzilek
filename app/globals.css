@@ -34,6 +34,19 @@
     }
   }
 
+  .errorShake {
+    animation: shake 0.4s 1 linear;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(20px); }
+    20% { transform: translate(-20px); }
+    40% { transform: translate(10px); }
+    60% { transform: translate(-10px); }
+    80% { transform: translate(5px); }
+    100% { transform: translate(0px); }
+  }
+
 .about-paragraphs > p > strong {
     @apply font-normal text-[#6D6D6D]
 }
@@ -63,6 +76,14 @@
 #inputs input:focus ~ label,
 #inputs input[data-not-empty='true'] ~ label {
   @apply text-black translate-y-[-20px] text-[10px] duration-[300ms]
+}
+
+#inputs input[data-not-valid='true'] ~ label {
+  @apply text-rose-600
+}
+
+#inputs  input[data-not-valid='true'] {
+  @apply border-rose-600
 }
 
 

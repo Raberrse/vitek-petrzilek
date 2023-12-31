@@ -27,9 +27,9 @@ export default function DesktopNavigation({additionalClasses}: DesktopNavigation
             <ul className='flex gap-3 items-center'>
             {iconItems.map((item, index) => (
                 <li key={index} className='flex'>
-                <button>
-                    {item.svg}
-                </button>
+                    <a href={item.href} target='_black'>
+                        {item.svg}
+                    </a>
                 </li>
             ))}
             </ul>

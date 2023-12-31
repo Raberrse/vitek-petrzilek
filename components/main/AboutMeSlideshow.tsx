@@ -41,7 +41,7 @@ export default function AboutMeSlideshow() {
               key={index}
               width={400}
               height={532}
-              className={`relative object-contain opacity-0 z-10 h-auto ${
+              className={`relative object-contain opacity-0 z-10 ${
                 index === currentImage ? "animation-slideshow" : "hidden"
               }`}
               src={image}

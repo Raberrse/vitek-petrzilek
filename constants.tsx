@@ -19,9 +19,9 @@ interface IconItem {
 }
 
 export const iconItems: IconItem[] = [
-  { svg: <IGIcon />, href: "/#" },
-  { svg: <YTIcon />, href: "/#" },
-  { svg: <FBIcon />, href: "/#" },
+  { svg: <IGIcon />, href: "https://www.instagram.com/vitek_petrzilek/" },
+  { svg: <YTIcon />, href: "https://www.youtube.com/channel/UCC4sSRYI8zxYVosNZUDJBQA" },
+  { svg: <FBIcon />, href: "https://www.facebook.com/profile.php?id=61554820498497&is_tour_dismissed=true" },
 ];
 
 interface ImageObject {

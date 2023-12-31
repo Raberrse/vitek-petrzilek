@@ -6,6 +6,8 @@ export default function Hero() {
     <div>
         <div className='relative w-full min-h-[500px] h-screen z-0'>
             <video
+              playsInline
+              controls={false}
               width={'100%'}
               id="myVideo" 
               src={"/hero_video.mp4"}

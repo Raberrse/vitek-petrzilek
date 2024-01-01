@@ -47,7 +47,6 @@ export default function TopThreeImages() {
               fill
               placeholder='blur'
               sizes="(min-width: 1040px) 33.32vw, 100vw"
-              quality={100}
               className={`object-fit ${project.additionalClasses} relative z-0 object-cover bg-[rgba(0,0,0,0.90)]`}
               onLoad={() => setIsLoaded(true)}
             />

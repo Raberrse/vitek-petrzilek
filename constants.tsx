@@ -7,10 +7,12 @@ interface NavigationItem {
 }
 
 export const navigationItems: NavigationItem[] = [
-  { text: "Portfolio", href: "/portfolio" },
-  { text: "Kontakt", href: "/#kontaktovat" },
+  { text: "Domů", href: "/" },
   { text: "O\u00A0mně", href: "/o-mne" },
+  { text: "Portfolio", href: "/portfolio" },
+  { text: "Reference", href: "/#reference" },
   { text: "Vybavení", href: "/vybaveni" },
+  { text: "Kontakt", href: "/#kontaktovat" },
 ];
 
 interface IconItem {

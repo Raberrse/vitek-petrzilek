@@ -3,7 +3,7 @@ import { Quote } from '../svg'
 
 export default function ReferenceLetters() {
   return (
-    <div className='flex items-center justify-center pt-[140px] pb-[70px] px-[90px] max-lg:px-[60px] max-sm:px-[30px]'>
+    <div id={'reference'} className='flex items-center justify-center pt-[140px] pb-[70px] px-[90px] max-lg:px-[60px] max-sm:px-[30px]'>
       <div className='text-[16px] flex w-full max-w-[1100px] flex-wrap justify-center gap-x-20 gap-y-16 text-[#9F9F9F]'>
         <div className='relative flex flex-col gap-5 w-[500px]'>
             <Quote width='130px' additionalClasses='absolute -z-10 md:-translate-x-1/2 -translate-y-1/2 max-md:right-0 max-md:w-[90px]'/>

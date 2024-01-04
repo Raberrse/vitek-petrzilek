@@ -144,10 +144,34 @@
   height: 0;
 }
 
-.iframe-container iframe{
+.iframe-container iframe {
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#footer-container[data-black-path='true'] {
+  @apply text-[#9F9F9F] bg-[#070707] 
+}
+
+#footer-container[data-black-path='false'] {
+  @apply text-black bg-white
+}
+
+#footer-container[data-black-path='true'] .social-icon {
+  @apply fill-white
+}
+
+#footer-container[data-black-path='false'] .social-icon {
+  @apply fill-black
+}
+
+#footer-container[data-black-path='true'] .signature-property {
+  @apply fill-white
+}
+
+#footer-container[data-black-path='false'] .signature-property {
+  @apply fill-black
 }

@@ -1,12 +1,21 @@
+'use client'
+
 import React from 'react'
 import { Signature } from '../svg'
 import { iconItems } from '@/constants'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
+
   return (
-    <div className='bg-[#070707] text-white flex px-[4%] max-lg:px-[30px] py-[30px] w-full items-center justify-between'>
-        <span className='text-[#9F9F9F] max-md:hidden'>
+    <div 
+        id={'footer-container'}
+        className='flex px-[4%] max-lg:px-[30px] py-[30px] w-full items-center justify-between'
+        data-black-path={pathname === '/portfolio' ? 'true' : 'false'}
+    >
+        <span className='max-md:hidden'>
             ©&nbsp;2023&nbsp;Vítek&nbsp;Petržílek
         </span>
 

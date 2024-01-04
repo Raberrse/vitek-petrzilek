@@ -9,7 +9,7 @@ export default function TopThree() {
 
   return (
     <div className='relative flex flex-col items-center gap-10'>
-      <h2 className='text-center absolute z-20 text-white font-bold text-[19px] top-20 w-full'>
+      <h2 className='text-center relative z-20 text-black text-[38px] font-bold w-full'>
         Moje top 3 Projekty
       </h2>
 

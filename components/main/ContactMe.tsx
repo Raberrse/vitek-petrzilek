@@ -167,7 +167,7 @@ const ContactMe = () => {
           <button
             ref={buttonRef}
             type="submit"
-            className={`overflow-hidden relative text-[18px] border border-black font-medium w-fit max-md:w-full py-5 px-12 rounded-xl self-end flex items-center justify-center 
+            className={`overflow-hidden relative text-[18px] border border-[#A2A2A2] font-medium w-fit max-md:w-full py-5 px-12 rounded-xl self-end flex items-center justify-center 
                         ${
                           isSubmited
                             ? "bg-black delay-[350ms]  duration-[750ms]"

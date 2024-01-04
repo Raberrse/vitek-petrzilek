@@ -3,14 +3,14 @@ import { AboutMe, ContactMe, Hero, Logos, ReferenceLetters, TopThree } from "@/c
 export default function Home() {
   return (
     <>
-      <main className="overflow-hidden">
+      <div className="overflow-hidden">
         <Hero />
         <Logos />
         <AboutMe />
         <TopThree/>
         <ReferenceLetters />
         <ContactMe />
-      </main>
+      </div>
     </>
   )
 }

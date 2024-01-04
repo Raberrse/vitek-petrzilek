@@ -2,7 +2,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
-import { Navigation } from '@/components/navigation';
+import { Navigation, ScrollToTop } from '@/components/navigation';
 import { Footer } from '@/components/footer';
 
 const helveticaNeue = localFont({
@@ -35,8 +35,13 @@ export default function RootLayout({
         <header className="relative z-10">
           <Navigation />
         </header>
+
+        <main>
+          <ScrollToTop />
           {children}
           {projects}
+        </main>
+        
         <footer>
           <Footer />
         </footer>

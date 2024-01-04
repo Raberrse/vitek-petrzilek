@@ -40,18 +40,18 @@ const ContactMe = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
-  
+
     let isFormValid = true;
-  
+
     const updatedFormState = { ...formState };
-  
+
     // Validate all fields except "company" and "message"
     for (const field of formFields) {
       if (field.id !== "company" && field.id !== "message") {
         const value = formState[field.id].value.trim();
-  
+
         // Check for empty values
         if (value === "") {
           isFormValid = false;
@@ -59,7 +59,7 @@ const ContactMe = () => {
         } else {
           updatedFormState[field.id].isValid = true;
         }
-  
+
         // Validate email field
         if (field.id === "email") {
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -70,16 +70,40 @@ const ContactMe = () => {
         }
       }
     }
-  
+
     setFormState(updatedFormState);
-  
+
     if (isFormValid) {
       setIsSubmited(true);
-      console.log("Form is valid. Submitting...");
+
+      // Make the POST request
+      try {
+        const response = await fetch("/api/sendEmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(
+            {
+              user_name: formState.name.value.trim(),
+              user_email: formState.email.value.trim(),
+              user_phone_number: formState["phone-number"].value.trim(),
+              user_company_name: formState.company.value.trim(),
+              user_message: formState.message.value.trim(),
+            }
+          ),
+        });
+
+        const data = await response.json();
+
+        console.log(data); // You can handle the response as needed
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
     } else {
       if (buttonRef.current) {
         buttonRef.current.classList.add("errorShake");
-  
+
         // Remove the errorShake class after the animation duration (adjust the timeout as needed)
         setTimeout(() => {
           if (buttonRef.current) {

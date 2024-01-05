@@ -8,8 +8,8 @@ import { TopThreeImages } from '.';
 export default function TopThree() {
 
   return (
-    <div className='relative flex flex-col items-center gap-10'>
-      <h2 className='text-center relative z-20 text-black text-[38px] font-bold w-full'>
+    <div className='relative flex flex-col items-center gap-10 '>
+      <h2 className='text-center relative z-20 text-black text-[38px] font-bold w-full px-[30px]'>
         Moje top 3 Projekty
       </h2>
 

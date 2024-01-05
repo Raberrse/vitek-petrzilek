@@ -36,7 +36,7 @@ export default function ScrollToTop() {
     unmountOnExit
   >
     {(state) => (
-      <div className={`fixed z-30 bottom-12 right-14 max-sm:right-[30px] duration-[300ms] ${state === "entered" ? "opacity-100 ": "opacity-0 "}`}>
+      <div className={`fixed z-30 bottom-[80px] right-14 max-sm:right-[30px] duration-[300ms] ${state === "entered" ? "opacity-100 ": "opacity-0 "}`}>
       <div className={`duration-[150ms] w-10 h-10`}>
         <button
           aria-label={`Zpět nahoru`}

@@ -4,7 +4,7 @@ import { HeroArrow, Signature } from '../svg'
 export default function Hero() {
   return (
     <div>
-        <div className='relative w-full min-h-[400px] h-screen z-0'>
+        <div className='relative w-full min-h-[600px] h-screen z-0'>
             <video
               playsInline
               controls={false}

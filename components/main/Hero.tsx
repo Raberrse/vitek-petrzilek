@@ -1,43 +1,22 @@
-'use client'
-
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { HeroArrow, Signature } from '../svg'
 
-
-// hero_video_md.mp4
-// hero_video_lg.mp4
-// hero_video.mp4
-
 export default function Hero() {
-  const [videoSource, setVideoSource] = useState('');
-
-  useEffect(() => {
-    const isSmallScreen = window.innerWidth <= 720;
-    const initialVideoSource = isSmallScreen
-      ? '/hero_video_md.mp4'
-      : window.innerWidth <= 1024
-      ? '/hero_video_lg.mp4'
-      : '/hero_video.mp4';
-
-    setVideoSource(initialVideoSource);
-  }, []);
-
   return (
     <div>
         <div className='relative w-full min-h-[450px] h-screen z-0'>
-            {videoSource !== '' && (
-              <video
+            <video
               playsInline
               controls={false}
               width={'100%'}
               id="myVideo" 
-              src={videoSource}
               autoPlay
               muted
               loop
               className='min-h-[450px] h-screen object-cover relative bg-[#000000c4]'
-            />
-            )}
+            >
+              <source src="/hero_video.mp4" type="video/mp4" />
+            </video>
             
             <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>
             

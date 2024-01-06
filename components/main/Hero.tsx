@@ -16,7 +16,8 @@ export default function Hero() {
               className='min-h-[450px] h-screen object-cover relative bg-[#000000c4]'
             >
               <source src="/hero_video_md.mp4" type="video/mp4" media="(max-width: 720px)" />
-              <source src="/hero_video.mp4" type="video/mp4" media="(min-width: 721px)" />
+              <source src="/hero_video_lg.mp4" type="video/mp4" media="(min-width: 721px)" />
+              <source src="/hero_video.mp4" type="video/mp4" media="(min-width: 1024px)" />
             </video>
             
             <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>

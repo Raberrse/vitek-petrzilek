@@ -66,7 +66,7 @@
 }
 
 #inputs input {
-  @apply border-b font-normal border-[#A2A2A2] outline-none text-black z-10 bg-transparent w-full pb-2 pt-4;
+  @apply border-b font-normal border-[#A2A2A2] outline-none text-black z-10 bg-transparent w-full pb-2 pt-4 rounded-none;
 }
 
 #inputs .input-underline {
@@ -177,7 +177,7 @@
 }
 
 #scroll-container-logos {
-  @apply w-full overflow-scroll p-2
+  @apply w-full overflow-scroll p-2 max-w-[1600px] max-lg:cursor-grab
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

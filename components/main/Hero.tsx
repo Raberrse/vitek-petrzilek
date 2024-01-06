@@ -15,9 +15,8 @@ export default function Hero() {
               loop
               className='min-h-[450px] h-screen object-cover relative bg-[#000000c4]'
             >
-              <source src="/hero_video_md.mp4" type="video/mp4" className='md:hidden'/>
-              <source src="/hero_video_lg.mp4" type="video/mp4" className='lg:max-md:hidden'/>
-              <source src="/hero_video.mp4" type="video/mp4" className='max-lg:hidden'/>
+              <source src="/hero_video_md.mp4" type="video/mp4" media="(max-width: 720px)" />
+              <source src="/hero_video_lg.mp4" type="video/mp4" media="(min-width: 721px)" />
             </video>
             
             <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>

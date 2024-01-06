@@ -6,20 +6,19 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 
 export default function Logos() {
-  const [isDragging, setIsDragging] = useState(false);
+  const [isDragging, setIsDragging] = useState(false)
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const ele = scrollContainerRef.current;
-
+    const ele = document.getElementById('scroll-container-logos');
     if (!ele) return;
-
+    
     let pos = { top: 0, left: 0, x: 0, y: 0 };
 
     const mouseDownHandler = function (e: MouseEvent) {
-      setIsDragging(true);
-      e.preventDefault();
-
+      setIsDragging(true)
+      e.preventDefault()
+      
       pos = {
         left: ele.scrollLeft,
         top: ele.scrollTop,
@@ -32,7 +31,7 @@ export default function Logos() {
     };
 
     const mouseMoveHandler = function (e: MouseEvent) {
-      e.preventDefault();
+      e.preventDefault()
 
       const dx = e.clientX - pos.x;
       const dy = e.clientY - pos.y;
@@ -42,7 +41,7 @@ export default function Logos() {
     };
 
     const mouseUpHandler = function () {
-      setIsDragging(false);
+      setIsDragging(false)
       document.removeEventListener('mousemove', mouseMoveHandler);
       document.removeEventListener('mouseup', mouseUpHandler);
     };
@@ -52,14 +51,14 @@ export default function Logos() {
     return () => {
       ele.removeEventListener('mousedown', mouseDownHandler);
     };
-  }, [scrollContainerRef]);
+  }, []); // Ensure the effect runs only once when the component mounts
 
   return (
     <div className='relative w-full flex justify-center items-center pt-[70px]'>
-      <div id='scroll-container-logos'>
-        <div ref={scrollContainerRef} className='flex max-lg:w-[1300px] justify-between gap-[40px] px-[150px] max-xl:px-[90px] max-lg:px-[60px] items-center select-none'>
+      <div ref={scrollContainerRef} id='scroll-container-logos'>
+        <div className='flex max-lg:w-[1300px] justify-between gap-[40px] px-[150px] max-xl:px-[90px] max-lg:px-[60px] items-center select-none'>
           {imageArray.map((image, index) => (
-            <Link href={image.href} target='_blank' key={index} className={`relative ${isDragging && 'pointer-events-none'}`}>
+            <Link href={image.href} target={'_blank'} key={index} className={`relative ${isDragging && 'pointer-events-none'}`}>
               <Image
                 src={image.component}
                 alt={image.alt}

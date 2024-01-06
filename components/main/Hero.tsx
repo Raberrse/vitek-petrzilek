@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { HeroArrow, Signature } from '../svg'
 
 export default function Hero() {
-  const [videoSource, setVideoSource] = useState('/hero_video.mp4');
+  const [videoSource, setVideoSource] = useState('');
 
   useEffect(() => {
     const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <div>
       <div className='relative w-full min-h-[450px] h-screen z-0'>
-        <video
+        {videoSource !== '' && (<video
           playsInline
           controls={false}
           width={'100%'}
@@ -35,7 +35,8 @@ export default function Hero() {
           muted
           loop
           className='min-h-[450px] h-screen object-cover relative bg-[#000000c4]'
-        />
+        />)
+        }
         
         <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>
         

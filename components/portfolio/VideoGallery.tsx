@@ -10,6 +10,9 @@ export default function VideoGallery() {
   const [isLoaded, setIsLoaded] = useState(false)
   const router = useRouter()
 
+  const handleButtonClick = (project: any) => {
+    router.push(`/portfolio?projekt=${project.idPathname}`, {scroll: false});
+  }
   const oddClasses = [
     "max-lg:row-span-2",
     "lg:col-start-1 lg:row-start-2 max-lg:row-start-3",
@@ -76,7 +79,7 @@ export default function VideoGallery() {
                             <div className={`duration-[200ms] w-10 h-0 lg:group-hover/container:h-10 max-lg:h-10`}>
                             <button
                                 aria-label={`Spustit video o ${project.title}`}
-                                onClick={() => router.push(`/portfolio/projekty/${(rowIndex * itemsPerRow + projectIndex)}`, { scroll: false })}
+                                onClick={() => handleButtonClick(project)}
                                 className="group/button -translate-x-1/2 left-1/2 w-[48px] h-[48px] relative flex items-center justify-center border-[1px] border-white rounded-full lg:group-hover/container:opacity-100 lg:hover:bg-white active:bg-white active:duration-0 max-lg:opacity-100 opacity-0 duration-[200ms] "
                               >
                                 <VideoArrow

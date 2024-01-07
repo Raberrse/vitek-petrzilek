@@ -1,14 +1,15 @@
 'use client'
-import { useRouter } from 'next/navigation';
+import { projects } from '@/constants';
+import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
 interface VideoPlayerParallel {
   additionalClasses?: string
-  videoLink: string
+  projectId: string
   defaultRoute?: string
 }
 
-export default function VideoPlayerParallel({additionalClasses, videoLink, defaultRoute = '/'}: VideoPlayerParallel) {
+export default function VideoPlayerParallel({additionalClasses, projectId, defaultRoute = '/'}: VideoPlayerParallel) {
   const router = useRouter()
   const [isClosed, setIsClosed] = useState(false)
 
@@ -29,7 +30,6 @@ export default function VideoPlayerParallel({additionalClasses, videoLink, defau
       
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isClosed]);
-  
 
   return (
     <div className={`fixed top-0 left-0 w-full h-screen overflow-scroll fade-in-opacity z-40 `}>
@@ -39,7 +39,7 @@ export default function VideoPlayerParallel({additionalClasses, videoLink, defau
             className="absolute top-0 left-0 w-full h-full"
             width={850}
             height={480}
-            src={videoLink}
+            src={projects.find(project => project.idPathname === projectId)?.videoLink}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

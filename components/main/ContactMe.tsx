@@ -1,5 +1,6 @@
 "use client";
 
+import { sendEmail } from "@/lib/sendEmail";
 import React, { useState, ChangeEvent, FormEvent, useRef } from "react";
 
 interface FormState {
@@ -75,31 +76,7 @@ const ContactMe = () => {
 
     if (isFormValid) {
       setIsSubmited(true);
-
-      // Make the POST request
-      try {
-        const response = await fetch("/api/sendEmail", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(
-            {
-              user_name: formState.name.value.trim(),
-              user_email: formState.email.value.trim(),
-              user_phone_number: formState["phone-number"].value.trim(),
-              user_company_name: formState.company.value.trim(),
-              user_message: formState.message.value.trim(),
-            }
-          ),
-        });
-
-        const data = await response.json();
-
-        console.log(data); // You can handle the response as needed
-      } catch (error) {
-        console.error("Error submitting form:", error);
-      }
+      sendEmail(formState)
     } else {
       if (buttonRef.current) {
         buttonRef.current.classList.add("errorShake");

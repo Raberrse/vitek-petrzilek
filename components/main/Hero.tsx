@@ -3,6 +3,14 @@
 import React, { useEffect, useState } from 'react'
 import { HeroArrow, Signature } from '../svg'
 
+//! Largest video too big for ftp server
+//! const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
+//!     const initialVideoSource = isSmallScreen
+//!       ? '/hero_video_md.mp4'
+//!       : window.innerWidth <= 1024
+//!       ? '/hero_video_lg.mp4'
+//!       : '/hero_video.mp4';
+
 export default function Hero() {
   const [videoSource, setVideoSource] = useState('');
 
@@ -10,9 +18,7 @@ export default function Hero() {
     const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
     const initialVideoSource = isSmallScreen
       ? '/hero_video_md.mp4'
-      : window.innerWidth <= 1024
-      ? '/hero_video_lg.mp4'
-      : '/hero_video.mp4';
+      : '/hero_video_lg.mp4';
 
     setVideoSource(initialVideoSource);
 

@@ -22,7 +22,7 @@ export default function ReferenceLetters() {
             <span className='font-bold text-black'>Martin Zíta</span>
             <span className=''>Marketingový specialista – Pádlujte.cz</span>
           </div>
-          <p className='italic'>“Na Vítka se můžeme vždy spolehnout. Jeho schopnost porozumět naší představě v kombinaci s jeho talentem je výjimečná. Je vidět, že to, co dělá ho velmi baví a je v tom opravdu dobrý. Vždy mu jde o naši spokojenost a je ochoten vyladit videa do detailu.”</p>
+          <p className='italic'>“Na Vítka se můžeme vždy spolehnout. Jeho schopnost porozumět naší představě v kombinaci s jeho talentem je výjimečná. Je vidět, že to, co dělá, ho velmi baví, a je v tom opravdu dobrý. Vždy mu jde o naši spokojenost a je ochoten vyladit videa do detailu.”</p>
         </div>
 
         <div className='flex flex-col gap-5 w-[500px]'>

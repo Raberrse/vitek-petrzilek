@@ -75,7 +75,7 @@ export const pieces = [
   {
     title: "Sony A7S III",
     description:
-      "Špičková videokamera a kamera pro všeobecné použití. Excelentní výkon v low-light situací a geniální stabilizace senzoru",
+      "Špičková videokamera a kamera pro všeobecné použití. Excelentní výkon v low-light situacích a geniální stabilizace senzoru.",
     image: image1,
     imageAlt: "Sony A7S III",
   },
@@ -88,14 +88,14 @@ export const pieces = [
   {
     title: "Sony Zeiss 35mm f1.4",
     description:
-      "Vysoce ostrý a kvalitní fixní objektiv s velkou světelností. Idealní do podmínek s málo světlem.",
+      "Vysoce ostrý a kvalitní nezoomovatelný objektiv s velkou světelností. Idealní do podmínek s nedostatkem světla.",
     image: image3,
     imageAlt: "Sony Zeiss 35mm f1.4",
   },
   {
     title: "Sony FE 50mm f/1,8",
     description:
-      "Standartní fixní objektiv s velkou světelností. Idealní do podmínek s málo světlem.",
+      "Standardní fixní objektiv s velkou světelností. Idealní do podmínek s nedostatkem světla.",
     image: image4,
     imageAlt: "Sony FE 50mm f/1,8",
   },
@@ -121,7 +121,7 @@ export const pieces = [
   {
     title: "GoPro HERO10",
     description:
-      "Akční kamera pro záběry přímo ze středu dění s velmi plynulou stabilizací obrazu.",
+      "Díky nižší úrovni stabilizace působí záběry velmi akčně.",
     image: image8,
     imageAlt: "GoPro HERO10",
   },
@@ -141,7 +141,7 @@ export const pieces = [
   {
     title: "RODE Wireless GO II",
     description:
-      "Kvalitní sada 2 bezdrátových mikrofonů pro zachycování rozhovorů.",
+      "Kvalitní sada 2 bezdrátových mikrofonů pro nahrávání rozhovorů.",
     image: image11,
     imageAlt: "RODE Wireless GO II",
   },
@@ -193,10 +193,10 @@ import Nine from "./public/bg/enteria.jpg";
 export const projects = [
   {
     image: One,
-    alt: "Mistroství světa v Thajsku",
-    title: "Mistroství světa v\u00A0Thajsku",
-    description: "3-denní mistrovství Česka v paddleboardingu s rozhovory.",
-    typeDate: "2022 | Event",
+    alt: "Mistrovství světa v Thajsku",
+    title: "Mistrovství světa v\u00A0Thajsku",
+    description: "Česká výprava paddleboardistů na Mistrovství světa v Thajsku. Ve videu jsou zachycené závody, příhody z cesty a trocha té kultury Thajska.",
+    typeDate: "2023 | Travel video",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/ynCSr-BItmg?si=FCg8UyI_fYLyF_GA",
     idPathname: "mistrostvi-sveta-v-thajsku",
@@ -206,7 +206,7 @@ export const projects = [
     alt: "Festival Výrava x MOK",
     title: "Festival Výrava x\u00A0MOK",
     description:
-      "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
+      "Zadání bylo vytvořit dvě reelska do 15s z celého festivalu včetně propagace nahřívacích tabákových jednotek.",
     typeDate: "2023 | Event",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/9BTZeqhLkjg?si=STS9B6x1-dtbd7OV",
@@ -217,7 +217,7 @@ export const projects = [
     alt: "Kolobřeh paddleboardové závody",
     title: "Kolobřeh paddleboardové závody",
     description:
-      "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
+      "Závody byly výzva na natočení za přímořských podmínek, větru a deště. Video se i přesto velmi vydařilo!",
     typeDate: "2023 | Event",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/pC8w-qEUHcI?si=IFc7ItKm9_SvqQZQ",
@@ -225,11 +225,11 @@ export const projects = [
   },
   {
     image: Four,
-    alt: "Para paddleboarding ČT",
-    title: "Para paddleboarding ČT",
+    alt: "Parapaddleboarding ČT",
+    title: "Parapaddleboarding ČT",
     description:
       "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
-    typeDate: "2022 | Event",
+    typeDate: "2022 | Reportáž",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/JBC4DJ-iBYM?si=no-_TB72geZxW5yM",
     idPathname: "para-paddleboarding-ct",
@@ -238,7 +238,7 @@ export const projects = [
     image: Five,
     alt: "Mistrovství ČR Dalešice",
     title: "Mistrovství ČR Dalešice",
-    description: "3-denní mistrovství Česka v paddleboardingu s rozhovory.",
+    description: "3-denní Mistrovství ČR v paddleboardingu s rozhovory.",
     typeDate: "2022 | Reportáž",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/dDrmE87NTMM?si=4LI746ivhqXmjwpa",
@@ -246,11 +246,11 @@ export const projects = [
   },
   {
     image: Six,
-    alt: "Mistrovství ČR v Bezdrev",
-    title: "Mistrovství ČR v\u00A0Bezdrev",
+    alt: "Mistrovství ČR Bezdrev",
+    title: "Mistrovství ČR Bezdrev",
     description:
-      "Pravidelné mistrovství Česka v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
-    typeDate: "2022 | Reportáž",
+      "Pravidelné Mistrovství ČR v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
+    typeDate: "2023 | Event",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/976irkfdVkk?si=HxYMvBLwEKDcfwDG",
     idPathname: "mistrovstvi-cr-v-bezdrev",
@@ -259,7 +259,7 @@ export const projects = [
     image: Seven,
     alt: "Pádlujte kdekoliv",
     title: "Pádlujte kdekoliv",
-    description: "Video do reklamní kampaně Pádlujte kdekoliv.",
+    description: "Video do reklamní kampaně Pádlujte.cz",
     typeDate: "2022 | Branding",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/dc08A5Nzh9A?si=x2wKFANGBorzrd0K",
@@ -277,10 +277,10 @@ export const projects = [
   },
   {
     image: Nine,
-    alt: "Entreria byty Thera",
-    title: "Entreria byty Thera",
+    alt: "Enteria byty Thera",
+    title: "Enteria byty Thera",
     description:
-      "Krátký sestřih jak probíhá vystavba bytových domů Thera v Hradci Králové.",
+      "Krátký sestřih, jak probíhá výstavba bytových domů Thera v Hradci Králové.",
     typeDate: "2023 | Dokumentační video",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/8nqu4mHd5mM?si=g-Ms_nYvLAqEu2E_",

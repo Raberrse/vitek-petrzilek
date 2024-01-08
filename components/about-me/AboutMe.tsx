@@ -14,7 +14,7 @@ export default function AboutMe() {
                         className='flex flex-col gap-[22px] about-paragraphs'
                     >
                         <p className='text-[#9F9F9F] font-normal text-[16px]'>
-                            Neustále se učím a <strong>posouvám kvalitu každého videa dále</strong>, proto můžete mít jistotu, že <strong>vaše video bude to nejlepší</strong>. Práce s mými klienty vždy přerostla v <strong>dlouhodobou spolupráci</strong>, protože vždy vycházím vstříc jejich přáním, jsem flexibilní a jde mi o co <strong>nejpřesnější ztvárnění jejich vize</strong>. To se následně odráží ve vysoké kvalitě zpracování. Co se týče finalizace videa, jednám vždy <strong>velmi rychle</strong>, ať máte <strong>video co nejdříve</strong>! 
+                            Neustále se učím a <strong>posouvám kvalitu každého videa dále</strong>, proto můžete mít jistotu, že <strong>vaše video bude to nejlepší</strong>. Práce s mými klienty vždy přerostla v <strong>dlouhodobou spolupráci</strong>, protože vždy vycházím vstříc jejich přáním, jsem flexibilní a jde mi o co <strong>nejpřesnější ztvárnění jejich vize</strong>. To se následně odráží ve vysoké kvalitě zpracování. Co se týče finalizace videa, jednám vždy <strong>velmi rychle</strong>, ať vidíte <strong>výsledek co nejdříve</strong>!
                         </p>
                         <p className='text-[#9F9F9F] font-normal text-[16px]'>
                             Součástí postprodukce, kromě plynulého střihu, je i <strong>color grading</strong> – barevná úprava, při které je každý záběr <strong>precizně upraven</strong>. Pokud jde o výrobu hudby, <strong>zpracovávání zvukových efektů</strong> a celkový mix, <strong>spolupracuji se zvukařem</strong> s mnohaletou praxí.

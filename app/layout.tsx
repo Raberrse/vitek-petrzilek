@@ -5,6 +5,8 @@ import './globals.css'
 import { Navigation, ScrollToTop } from '@/components/navigation';
 import { Footer } from '@/components/footer';
 import Script from 'next/script';
+import { GoogleAnalytics } from '@/components/assets';
+import { GA_TRACKING_ID } from '@/lib/gtag';
 
 const helveticaNeue = localFont({
   src: [
@@ -21,19 +23,22 @@ export const metadata: Metadata = {
   keywords: ['Video', 'Video editor', 'Tvorba videí', 'Natáčení', 'Grafik', 'Kameraman', 'Vítek Petržílek'],
   title: 'Vítek Petžílek',
   description:
-    'Jsem vášnivý tvůrce videí již od malička. Má práce spočívá v tom, vytvářet nejen videa, ale skutečné vizuální zážitky.',
+    'Jsem vášnivý tvůrce videí již od malička. Mou specialitou je dodávat profesionálně zpracovaná videa, která jsou připravena k okamžité publikaci.',
   twitter: {
     title: 'Vítek Petržílek',
-    description: 'Jsem vášnivý tvůrce videí již od malička. Má práce spočívá v tom, vytvářet nejen videa, ale skutečné vizuální zážitky.',
+    description: 'Jsem vášnivý tvůrce videí již od malička. Mou specialitou je dodávat profesionálně zpracovaná videa, která jsou připravena k okamžité publikaci.',
     images: ['/thumbnail.jpg'],
     card: 'summary_large_image'
   },
   openGraph:{ 
     title: 'Vítek Petržílek',
-    description: 'Jsem vášnivý tvůrce videí již od malička. Má práce spočívá v tom, vytvářet nejen videa, ale skutečné vizuální zážitky.',
+    description: 'Jsem vášnivý tvůrce videí již od malička. Mou specialitou je dodávat profesionálně zpracovaná videa, která jsou připravena k okamžité publikaci.',
     url: 'https://www.vitekpetrzilek.cz/',
     images: ['/thumbnail.jpg']
-  }
+  },
+  icons: {
+    apple: '/apple-touch.png',
+  },
 }
 
 export default function RootLayout({
@@ -44,17 +49,18 @@ export default function RootLayout({
 
   return (
     <html lang="cs">
+
       <Script defer src="https://smtpjs.com/v3/smtp.js"></Script>
+      <GoogleAnalytics GA_MEASUREMENT_ID={GA_TRACKING_ID}/>
+
       <body className={`${helveticaNeue.className}`}>
         <header className="relative z-10">
           <Navigation />
         </header>
-
         <main>
           <ScrollToTop />
           {children}
         </main>
-        
         <footer>
           <Footer />
         </footer>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/gtag.js": "^0.0.18",
     "next": "14.0.4",
     "nodemailer": "^6.9.8",
     "react": "^18",

@@ -14,10 +14,10 @@ export default function AboutMe() {
                         className='flex flex-col gap-[22px] about-paragraphs' 
                     >
                         <p className='text-[#9F9F9F] font-normal text-[16px]'>
-                            Jmenuji se Vítek Petržílek, jsem vášnivý tvůrce videí již od malička. Má práce spočívá v tom, vytvářet nejen videa, ale skutečné <strong>vizuální zážitky</strong>. Mým cílem je vždy vytvořit něco <strong>zajímavého</strong> a <strong>unikátního</strong>, co osloví a upoutá pozornost každého diváka.
+                            Jmenuji se Vítek Petržílek, již od malička jsem vášnivý tvůrce videí. Mým cílem je vždy vytvořit něco <strong>zajímavého</strong> a <strong>unikátního</strong>, co osloví a upoutá pozornost každého diváka.
                         </p>
                         <p className='text-[#9F9F9F] font-normal text-[16px]'>
-                            Mou specialitou je dodávat <strong>profesionálně zpracovaná videa</strong>, která jsou <strong>připravena k okamžité publikaci</strong>. S důrazem na detail a kreativní přístup se snažím přinášet nejen technicky precizní videa, ale i <strong>obsahově bohaté</strong> a <strong>příběhově silné</strong>. Každý projekt pro mě představuje novou výzvu, kterou s radostí přijímám a plně se věnuji, aby výsledek byl nejenom uspokojivý, ale i inspiroval k dalším příležitostem a <strong>spolupracím</strong>. 
+                            Mou specialitou je dodávat <strong>profesionálně zpracovaná videa</strong>, která jsou <strong>připravena k okamžité publikaci</strong>. S důrazem na detail a kreativní přístup se snažím přinášet technicky precizní videa, která jsou však i <strong>obsahově bohatá</strong> a <strong>příběhově silná</strong>. Každý projekt pro mě představuje novou výzvu, kterou s radostí přijímám a plně se jí věnuji, aby výsledek byl nejenom uspokojivý, ale i inspiroval k dalším příležitostem a <strong>spolupracím</strong>.
                         </p>
                     </div>
 

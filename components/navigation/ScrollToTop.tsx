@@ -41,7 +41,7 @@ export default function ScrollToTop() {
         <button
           aria-label={`Zpět nahoru`}
           onClick={scrollToTop}
-          className="group/button -translate-x-1/2 left-1/2 w-[48px] h-[48px] relative flex items-center justify-center border-[1px] rounded-full opacity-100 bg-white border-[#9F9F9F]"
+          className="group/button -translate-x-1/2 left-1/2 w-[48px] h-[48px] relative flex items-center justify-center border-[1px] rounded-full opacity-100 bg-white border-[#9F9F9F] duration-[300ms] hover:shadow-small"
         >
           <VideoArrow
             width="48px"

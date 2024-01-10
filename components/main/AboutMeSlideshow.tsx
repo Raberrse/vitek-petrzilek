@@ -35,30 +35,22 @@ export default function AboutMeSlideshow() {
           <ShortArrowSlideshow width="10px" additionalClasses="rotate-180" />
         </button>
 
-        <div className="relative max-w-[400px] overflow-hidden w-full">
-          {images.map((image, index) => (
-            <Image
-              priority
-              key={index}
-              width={400}
-              height={532}
-              className={`relative object-contain opacity-0 z-10 ${
-                index === currentImage ? "animation-slideshow" : "hidden"
-              }`}
-              src={image}
-              alt={`Fotka ${index + 1}`}
-            />
-          ))}
-
-          {/* Background ????*/}
-
-          {/* <Image
-              width={400}
-              height={1}
-              className={`object-contain absolute top-0 left-0`}
-              src={One}
-              alt={`Fotka `}
-            /> */}
+        <div className="max-w-[400px] relative w-full overflow-hidden">
+          <div
+            className="flex -z-10 w-full duration-[500ms] ease-in-out"
+            style={{transform: `translateX(${-currentImage*100}%)` }}>
+            {images.map((image, index) => (
+              <Image
+                priority
+                key={index}
+                width={400}
+                height={532}
+                className={`relative object-contain z-10 `}
+                src={image}
+                alt={`Fotka ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         <button 

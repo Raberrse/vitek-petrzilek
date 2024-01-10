@@ -96,7 +96,7 @@ const ContactMe = () => {
       id="kontaktovat"
       className="flex flex-col items-center justify-center gap-14 px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] pb-20 pt-[70px]"
     >
-      <h2 className="text-center text-[32px] font-bold">
+      <h2 className="text-center text-[32px] font-bold leading-[40px]">
         Neváhejte mi napsat!
       </h2>
 
@@ -144,7 +144,7 @@ const ContactMe = () => {
           <button
             ref={buttonRef}
             type="submit"
-            className={`overflow-hidden relative text-[18px] border border-[#A2A2A2] font-medium w-fit max-md:w-full py-5 px-12 rounded-xl self-end flex items-center justify-center 
+            className={`overflow-hidden relative text-[18px] border border-[#A2A2A2] hover:shadow-small duration-[300ms] font-medium w-fit max-md:w-full py-5 px-12 rounded-xl self-end flex items-center justify-center 
                         ${
                           isSubmited
                             ? "bg-black delay-[350ms]  duration-[750ms]"

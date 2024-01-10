@@ -33,7 +33,7 @@ export default function Hero() {
         <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>
         
         <HeroArrow additionalClasses='absolute bottom-[30px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-sm:w-[30px] '/>
-        <Signature additionalClasses='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 fade-in-opacity-signature' />
+        <Signature additionalClasses='absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[calc(-50%-13px)] z-20 fade-in-opacity-signature ' />
       </div>  
     </div>
   );

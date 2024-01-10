@@ -1,6 +1,5 @@
 import { iconItems, navigationItems } from '@/constants'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'
 
 interface DesktopNavigationProps {
@@ -8,7 +7,8 @@ interface DesktopNavigationProps {
 }
 
 export default function DesktopNavigation({additionalClasses}: DesktopNavigationProps) {
-  const pathname = usePathname()
+    const router = useRouter()
+    const pathname = usePathname()
 
   return (
     <div className={additionalClasses}>
@@ -16,10 +16,10 @@ export default function DesktopNavigation({additionalClasses}: DesktopNavigation
             <ul className='flex gap-5'>
             {navigationItems.map((item, index) => (
                 <li key={index} className='relative overflow-hidden'>
-                <Link aria-label={item.text} href={item.href} className={`relative text-[16px]`}>
+                <button onClick={() => router.push(item.href)} aria-label={item.text} className={`relative text-[16px]`}>
                     {item.text}
-                </Link>
-                    <span className={`mb-[4px] underline-navigation absolute bottom-0 left-0 w-full bg-black h-[1px]  z-0 ${pathname === item.href ? 'translate-x-0' : '-translate-x-[calc(100%+2px)]'}`}/>
+                </button>
+                    <span className={`mb-[4px] underline-navigation absolute bottom-0 left-0 w-full bg-black h-[1px]  z-0 ${pathname.replaceAll('/','') === item.href.replaceAll('/','') ? 'translate-x-0' : '-translate-x-[calc(100%+2px)]'}`}/>
                 </li>
             ))}
             </ul>

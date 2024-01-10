@@ -39,7 +39,7 @@ export default function TopThreeImages() {
 
           <div className="duration-[200ms] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-[14%] max-sm:px-[30px] flex flex-col gap-6 items-center justify-center z-20">
             <div className="flex flex-col gap-[12px]">
-              <h3 className="duration-[200ms] text-white text-center lg:leading-[55px] text-[42px] max-lg:text-[26px] font-bold">
+              <h3 className="duration-[200ms] text-white text-center lg:leading-[55px] text-[42px] max-lg:text-[26px] font-bold leading-[32px]">
                 {project.title}
               </h3>
               <p className="duration-[200ms] text-white text-center text-[16px] max-lg:text-[14px]">

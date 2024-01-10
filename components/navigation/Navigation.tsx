@@ -7,13 +7,14 @@ import { usePathname } from "next/navigation";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname()
+  const isWhitePath = pathname.replaceAll('/', '') === 'portfolio' || pathname.replaceAll('/', '') === '';
 
   return (
     <div className="absolute flex justify-center w-full px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] z-10">
       <div 
         id="navigation-container"
         className=" font-base flex justify-between items-start w-full max-w-[1200px] pt-10 text-[18px] "
-        data-white-path={pathname === '/portfolio' || pathname === '/' ? 'true' : 'false'}
+        data-white-path={isWhitePath}
         data-is-open={isOpen ? 'true' : 'false'}
       >
         <Link 

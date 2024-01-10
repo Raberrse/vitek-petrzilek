@@ -21,8 +21,11 @@ export default function AboutMe() {
                         </p>
                     </div>
 
-                    <Link href={'/o-mne'} className='font-bold text-[#6D6D6D] underline'>
-                        Více o mně
+                    <Link href={'/o-mne'} className='group font-bold text-[#6D6D6D] relative overflow-hidden w-fit'>
+                        <span className={`relative text-[16px]`}>
+                            Více o mně
+                        </span>
+                        <span className={`mb-[4px] underline-navigation absolute left-0 w-full bg-[#6D6D6D] h-[1px]  z-0 duration-[300ms] bottom-[-1px] group-hover:translate-x-0 -translate-x-[calc(100%+2px)] `}/>
                     </Link>
                 </div>
 

@@ -19,7 +19,7 @@ export default function EquipmentGallery() {
               alt={`${piece.imageAlt}`}
             />
 
-            <div className="flex flex-col gap-[14px]">
+            <div className="flex flex-col gap-[8px]">
               <h4 className="text-[20px] font-bold">{piece.title}</h4>
               <p className="text-[16px] font-light text-[#9F9F9F]">{piece.description}</p>
             </div>

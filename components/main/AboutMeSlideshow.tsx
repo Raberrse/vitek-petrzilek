@@ -27,12 +27,12 @@ export default function AboutMeSlideshow() {
     <div className="w-full flex justify-center items-center">
       <div className="flex gap-5 max-sm:gap-2 ">
         <button 
-          className={`p-3 ${currentImage === 0 ? 'opacity-0 ' : 'opacity-100'} duration-200`} 
+          className={`p-3 ${currentImage === 0 ? 'opacity-0  ' : 'opacity-100 '} duration-[300ms] rounded-lg group my-auto `} 
           onClick={prevImage}
           disabled={currentImage === 0}
-          aria-label="Předchozí fotka"
+          aria-label="Další fotka"
         >
-          <ShortArrowSlideshow width="10px" additionalClasses="rotate-180" />
+          <ShortArrowSlideshow additionalClasses="rotate-180" additionalPathClasses={` fill-[#9F9F9F] ${currentImage !== 0 ? 'lg:group-hover:fill-black max-lg:group-active:fill-black lg:duration-[300ms]' : ' '} `} width="10px" />
         </button>
 
         <div className="max-w-[400px] relative w-full overflow-hidden">
@@ -54,12 +54,12 @@ export default function AboutMeSlideshow() {
         </div>
 
         <button 
-          className={`p-3 ${currentImage === 3 ? 'opacity-0 ' : 'opacity-100'} duration-200`} 
+          className={`p-3 ${currentImage === 3 ? 'opacity-0  ' : 'opacity-100 '} duration-[300ms] rounded-lg group my-auto `} 
           onClick={nextImage}
           disabled={currentImage === 3}
           aria-label="Další fotka"
         >
-          <ShortArrowSlideshow width="10px" />
+          <ShortArrowSlideshow additionalPathClasses={` fill-[#9F9F9F] ${currentImage !== 3 ? 'lg:group-hover:fill-black max-lg:group-active:fill-black lg:duration-[300ms]' : ' '} `} width="10px" />
         </button>
       </div>
     </div>

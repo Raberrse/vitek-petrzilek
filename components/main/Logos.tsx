@@ -59,7 +59,7 @@ export default function Logos() {
   return (
     <div className='relative w-full flex justify-center items-center pt-[70px]'>
       <div ref={scrollContainerRef} id='scroll-container-logos'>
-        <div className='flex max-lg:w-[1300px] justify-between gap-[40px] px-[150px] max-xl:px-[90px] max-lg:px-[60px] items-center select-none'>
+        <div className='flex max-lg:w-[1300px] max-sm:w-[1150px] justify-between gap-[40px] px-[150px] max-xl:px-[90px] max-lg:px-[60px] items-center select-none'>
           {imageArray.map((image, index) => (
             <Link 
               onClick={() => {

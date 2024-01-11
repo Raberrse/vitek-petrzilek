@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <div>
-      <div className='relative w-full min-h-[450px] h-screen z-0'>
+      <div className='relative w-full min-h-[450px] h-screen z-0 bg-[#000000]'>
         <video
           playsInline
           controls={false}
@@ -15,7 +15,7 @@ export default function Hero() {
           autoPlay
           muted
           loop
-          className='min-h-[450px] h-screen object-cover relative bg-[#000000c4]'
+          className='min-h-[450px] h-screen object-cover relative fade-in-opacity'
         >
           <source
             className=""

@@ -6,6 +6,7 @@ import ReferenceLetters from './ReferenceLetters'
 import ContactMe from './ContactMe'
 import AboutMeSlideshow from './AboutMeSlideshow'
 import TopThreeImages from './TopThreeImages'
+import HeroVideo from './HeroVideo'
 
 export {
     Hero,
@@ -15,5 +16,6 @@ export {
     ReferenceLetters,
     ContactMe,
     AboutMeSlideshow,
-    TopThreeImages
+    TopThreeImages,
+    HeroVideo
 }

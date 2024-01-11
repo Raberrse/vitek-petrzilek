@@ -1,34 +1,16 @@
-
-import React from 'react'
+import React, { Suspense } from 'react'
 import { HeroArrow, Signature } from '../svg'
+import { HeroVideo } from '.';
+import Image from 'next/image';
+import fallbackImage from '../../public/canvas.jpg'
 
 export default function Hero() {
 
   return (
     <div>
-      <div className='relative w-full min-h-[450px] h-screen z-0 bg-[#000000]'>
-        <video
-          playsInline
-          controls={false}
-          width={'100%'}
-          id="myVideo" 
-          autoPlay
-          muted
-          loop
-          className='min-h-[450px] h-screen object-cover relative fade-in-opacity'
-        >
-          <source
-            className=""
-            src="/hero_video_lg.mp4"
-            type="video/mp4"
-            media='(min-width: 764px)'
-          />
-          <source
-            className=""
-            src="/hero_video_md.mp4"
-            type="video/mp4"
-          />
-        </video>
+      <div className="relative w-full min-h-[450px] h-screen z-0 bg-black">
+        <Image priority src={fallbackImage} fill className='object-cover' alt="afda"/>
+        <HeroVideo />
         
         <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>
         

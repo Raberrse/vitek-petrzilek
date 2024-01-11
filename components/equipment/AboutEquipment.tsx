@@ -8,7 +8,7 @@ export default function AboutEquipment() {
         <div className='flex gap-14 justify-start w-full max-w-[1200px] '>
             <div className='w-[600px]'>
                 <div className='flex flex-col gap-[30px]'>
-                    <h2 className='text-[38px] font-bold'>Moje vybavení</h2>
+                    <h2 className='text-[38px] font-bold leading-[46px]'>Moje vybavení</h2>
 
                     <div 
                         className='flex flex-col gap-[22px] about-paragraphs'

@@ -1,28 +1,34 @@
 import React from 'react'
-
 export default function HeroVideo() {
   return (
-    <video
+    <>
+
+    {/* Desktop  */}
+      <video
         playsInline
         controls={false}
         width={'100%'}
         id="myVideo" 
+        src="/hero_video_lg.mp4"
         autoPlay
         muted
         loop
-        className='min-h-[450px] h-screen object-cover relative'
-    >
-        <source
-        className=""
-        src="/hero_video_lg.mp4"
-        type="video/mp4"
-        media='(min-width: 764px)'
-        />
-        <source
-        className=""
+        className='min-h-[450px] h-screen object-cover relative max-md:hidden'
+      />
+
+    {/* Mobile */}
+      <video
+        playsInline
+        controls={false}
+        width={'100%'}
+        id="myVideo" 
         src="/hero_video_md.mp4"
-        type="video/mp4"
-        />
-    </video>
+        autoPlay
+        muted
+        loop
+        className='min-h-[450px] h-screen object-cover relative md:hidden'
+      />
+    </>
+        
   )
 }

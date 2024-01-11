@@ -10,7 +10,7 @@ export default function Hero() {
     <div>
       <div className="relative w-full min-h-[450px] h-screen z-0 bg-black">
         <Image priority src={fallbackImage} fill className='min-h-[450px] h-screen object-cover relative' alt="afda"/>
-        <HeroVideo />
+          <HeroVideo />
         
         <div className='absolute top-0 left-0 bg-black w-full h-full opacity-[0.5] z-10'/>
         

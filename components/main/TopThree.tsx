@@ -17,7 +17,7 @@ export default function TopThree() {
         <TopThreeImages/>
       </div>
 
-      <Link href={'/o-mne'} className='group font-bold text-[#6D6D6D] lg:hover:text-black active:text-black relative overflow-hidden w-fit lg:duration-[300ms]'>
+      <Link href={'/portfolio'} className='group font-bold text-[#6D6D6D] lg:hover:text-black active:text-black relative overflow-hidden w-fit lg:duration-[300ms]'>
           <span className={`relative text-[16px]`}>
             Více projektů zde...
           </span>

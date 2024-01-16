@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { ShortArrowSlideshow } from "../svg";
 import One from "../../public/main-slideshow/1.jpg";
 import Two from "../../public/main-slideshow/2.jpg";
@@ -41,7 +41,6 @@ export default function AboutMeSlideshow() {
             style={{transform: `translateX(${-currentImage*100}%)` }}>
             {images.map((image, index) => (
               <Image
-                priority
                 key={index}
                 width={400}
                 height={532}

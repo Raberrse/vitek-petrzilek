@@ -3,6 +3,7 @@ import React from 'react'
 export default function HeroVideo() {
   return (
     <video
+        preload='auto'
         playsInline
         controls={false}
         width={'100%'}
@@ -20,7 +21,7 @@ export default function HeroVideo() {
         media='(max-width: 764px)'
         />
 
-<source
+        <source
         className=""
         src="/hero_video_lg.mp4"
         type="video/mp4"

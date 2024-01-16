@@ -41,6 +41,7 @@ export default function AboutMeSlideshow() {
             style={{transform: `translateX(${-currentImage*100}%)` }}>
             {images.map((image, index) => (
               <Image
+                placeholder="blur"
                 key={index}
                 width={400}
                 height={532}

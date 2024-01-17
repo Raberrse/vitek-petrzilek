@@ -13,7 +13,7 @@ export default function Footer() {
     <div 
         id={'footer-container'}
         className='flex px-[4%] max-lg:px-[30px] py-[30px] w-full items-center justify-between'
-        data-black-path={pathname === '/portfolio' ? 'true' : 'false'}
+        data-black-path={pathname.replaceAll('/','') === 'portfolio' ? 'true' : 'false'}
     >
         <span className='max-md:hidden'>
             ©&nbsp;2023&nbsp;Vítek&nbsp;Petržílek

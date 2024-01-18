@@ -27,14 +27,14 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Vítek Petržílek',
     description: 'Jsem vášnivý tvůrce videí již od malička. Mou specialitou je dodávat profesionálně zpracovaná videa, která jsou připravena k okamžité publikaci.',
-    images: ['/thumbnail.jpg'],
+    images: ['https://www.vitekpetrzilek.cz/twitter-thumbnail.jpg'],
     card: 'summary_large_image'
   },
   openGraph:{ 
     title: 'Vítek Petržílek',
     description: 'Jsem vášnivý tvůrce videí již od malička. Mou specialitou je dodávat profesionálně zpracovaná videa, která jsou připravena k okamžité publikaci.',
     url: 'https://www.vitekpetrzilek.cz/',
-    images: ['/thumbnail.jpg']
+    images: ['https://www.vitekpetrzilek.cz/thumbnail.jpg']
   },
   icons: {
     apple: '/apple-touch.png',

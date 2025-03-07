@@ -58,7 +58,7 @@ export default function VideoPlayerParallel({additionalClasses, projectId, defau
           />
         </button>
 
-        <div className='absolute top-0 left-0 bg-[rgba(0,0,0,0.7)] w-full h-screen z-0' onClick={() => setIsClosed(true)}/>
+        <div className='absolute top-0 left-0 bg-[rgba(0,0,0,0.7)] w-full h-full z-0' onClick={() => setIsClosed(true)}/>
       </div>
     </div>
   )

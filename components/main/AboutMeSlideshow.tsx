@@ -25,7 +25,7 @@ export default function AboutMeSlideshow() {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="flex gap-5 max-sm:gap-2 ">
+      <div className="flex gap-5 max-sm:gap-2">
         <button 
           className={`p-3 ${currentImage === 0 ? 'opacity-0  ' : 'opacity-100 '} duration-[300ms] rounded-lg group my-auto `} 
           onClick={prevImage}

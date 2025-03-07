@@ -2,12 +2,13 @@ import { pieces } from "@/constants";
 import Image from "next/image";
 import React from "react";
 import Placeholder from '../../public/white_placeholder.jpg'
+import bottomPage from '../../public/equipment/bottom-page.jpg'
 
 export default function EquipmentGallery() {
   const oneRemainingItem = pieces.length % 3 === 1;
 
   return (
-    <div className="px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px]">
+    <div className="px-[150px] max-xl:px-[90px] max-lg:px-[60px] max-sm:px-[30px] flex flex-col justify-center items-center">
       <div className="mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[110px] gap-x-[60px] justify-items-center">
         {pieces.map((piece, index) => (
           <div key={index} className={`relative flex flex-col justify-start w-full gap-5 justify-self-auto ${oneRemainingItem && index === pieces.length - 1 ? 'lg:col-start-2' : ''}`}>
@@ -25,7 +26,14 @@ export default function EquipmentGallery() {
             </div>
           </div>
         ))}
+        
       </div>
+      <Image
+          placeholder="blur"
+          className={`object-contain z-10 pt-[110px]`}
+          src={bottomPage}
+          alt={`Kamera`}
+        />
     </div>
   );
 }

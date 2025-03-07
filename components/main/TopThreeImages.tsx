@@ -4,9 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { VideoArrow } from "../svg";
 import { useRouter } from "next/navigation";
-import { projects } from "@/constants";
-
-const projectsTopThree = projects.slice(0, 3);
+import { topThreeProjects } from "@/constants";
 
 export default function TopThreeImages() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,7 +16,7 @@ export default function TopThreeImages() {
   
   return (
     <>
-      {projectsTopThree.map((project, index) => (
+      {topThreeProjects.map((project, index) => (
         <div
           key={index}
           className={`relative flex-1 ${isLoaded && "group/container"} `}

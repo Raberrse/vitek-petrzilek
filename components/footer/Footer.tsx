@@ -6,6 +6,7 @@ import { iconItems } from '@/constants'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+
 export default function Footer() {
   const pathname = usePathname()
 
@@ -16,7 +17,7 @@ export default function Footer() {
         data-black-path={pathname.replaceAll('/','') === 'portfolio' ? 'true' : 'false'}
     >
         <span className='max-md:hidden'>
-            ©&nbsp;2023&nbsp;Vítek&nbsp;Petržílek
+            ©&nbsp;{new Date().getFullYear()}&nbsp;Vítek&nbsp;Petržílek
         </span>
 
         <Link aria-label={'Domů'}  href={'/'}>

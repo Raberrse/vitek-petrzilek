@@ -1,3 +1,4 @@
+'use client'
 import { iconItems, navigationItems } from '@/constants'
 import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'

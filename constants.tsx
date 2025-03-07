@@ -69,9 +69,9 @@ import image13 from "./public/equipment/13.jpg";
 import image14 from "./public/equipment/14.jpg";
 import image15 from "./public/equipment/15.jpg";
 import image16 from "./public/equipment/16.jpg";
-import amaran_f22c from "./public/equipment/Amaran_f22c.jpg";
+import amaran_f22c from "./public/equipment/amaran_f22.jpg";
 import nanlite_pavotube_6c_ii from "./public/equipment/Nanlite_Pavotube_6c_ii.jpg";
-import rode_lavalier_2 from "./public/equipment/Rode_Lavalier_2.jpg";
+import rode_lavalier_2 from "./public/equipment/rode_lavalier_2.jpg";
 import { StaticImageData } from "next/image";
 
 export const pieces = [

@@ -260,7 +260,7 @@ export const projects = [
     alt: "Elektrický lodní motor",
     title: "Elektrický lodní motor",
     description:
-      "Krátká reklama, zaměřená na jednoduchost elektrického motoru.",
+      "Krátká reklama zaměřená na jednoduchost elektrického motoru.",
     typeDate: "2024 | Reklamní video",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/rcXwL2fRVxk?si=Iz0tvdCLqmJDSojZ",
@@ -271,7 +271,7 @@ export const projects = [
     alt: "Mistrovství ČR Bezdrev",
     title: "Mistrovství ČR Bezdrev",
     description:
-      "Pravidelné Mistrovství ČR v paddleboardingu na 3 dny. Ve videu je zachycený každý den včetně rozhovorů.",
+      "Pravidelné třídenní Mistrovství ČR v paddleboardingu. Ve videu je zachycený každý den včetně rozhovorů.",
     typeDate: "2023 | Event",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/976irkfdVkk?si=HxYMvBLwEKDcfwDG",
@@ -282,7 +282,7 @@ export const projects = [
     alt: "Parapaddleboarding ČT",
     title: "Parapaddleboarding ČT",
     description:
-      "Byl jsem osloven Českou televizí pro vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
+      "Byl jsem osloven Českou televizí ohledně vytvoření reportáže o Parapaddleboardingu. Reportáž byla vysílána na ČT Sport.",
     typeDate: "2022 | Reportáž",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/JBC4DJ-iBYM?si=no-_TB72geZxW5yM",
@@ -375,7 +375,7 @@ export const topThreeProjects = [
       "Zadání bylo vytvořit dvě reelska do 15s z celého festivalu včetně propagace nahřívacích tabákových jednotek.",
     typeDate: "2023 | Event",
     additionalClasses: "",
-    videoLink: "https://www.youtube.com/embed/9BTZeqhLkjg?si=STS9B6x1-dtbd7OV",
+    videoLink: "https://www.youtube.com/embed/24Ix6fT6_L8?si=CDeMwr63vy6crHN9",
     idPathname: "festival-vyrava-x-mok",
   },
 ];

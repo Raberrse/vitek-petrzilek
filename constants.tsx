@@ -323,9 +323,9 @@ export const projects = [
   {
     image: HrosiStavby,
     alt: "Hroší stavby Morava",
-    title: "Mistrovství světa v\u00A0Thajsku",
-    description: "Česká výprava paddleboardistů na Mistrovství světa v Thajsku. Ve videu jsou zachycené závody, příhody z cesty a trocha té kultury Thajska.",
-    typeDate: "2023 | Travel video",
+    title: "Hroší stavby Morava",
+    description: "Akční video stavby v Havířově.",
+    typeDate: "2024 | Dokumentační video",
     additionalClasses: "",
     videoLink: "https://www.youtube.com/embed/RVGE-oIvqpI?si=lTvU5EbnB6AWsKiu",
     idPathname: "hrosi-stavby-morava",

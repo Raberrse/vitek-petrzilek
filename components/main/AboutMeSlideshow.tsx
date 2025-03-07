@@ -6,9 +6,10 @@ import One from "../../public/main-slideshow/1.jpg";
 import Two from "../../public/main-slideshow/2.jpg";
 import Three from "../../public/main-slideshow/3.jpg";
 import Four from "../../public/main-slideshow/4.jpg";
+import Five from "../../public/main-slideshow/5.jpg";
 import Image from "next/image";
 
-const images = [One, Two, Three, Four];
+const images = [One, Two, Three, Four, Five];
 
 export default function AboutMeSlideshow() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -54,12 +55,12 @@ export default function AboutMeSlideshow() {
         </div>
 
         <button 
-          className={`p-3 ${currentImage === 3 ? 'opacity-0  ' : 'opacity-100 '} duration-[300ms] rounded-lg group my-auto `} 
+          className={`p-3 ${currentImage === 4 ? 'opacity-0  ' : 'opacity-100 '} duration-[300ms] rounded-lg group my-auto `} 
           onClick={nextImage}
-          disabled={currentImage === 3}
+          disabled={currentImage === 4}
           aria-label="Další fotka"
         >
-          <ShortArrowSlideshow additionalPathClasses={` fill-[#9F9F9F] ${currentImage !== 3 ? 'lg:group-hover:fill-black max-lg:group-active:fill-black lg:duration-[300ms]' : ' '} `} width="10px" />
+          <ShortArrowSlideshow additionalPathClasses={` fill-[#9F9F9F] ${currentImage !== 4 ? 'lg:group-hover:fill-black max-lg:group-active:fill-black lg:duration-[300ms]' : ' '} `} width="10px" />
         </button>
       </div>
     </div>

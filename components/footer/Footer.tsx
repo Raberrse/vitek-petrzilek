@@ -19,7 +19,6 @@ export default function Footer() {
         <span className='max-md:hidden'>
             ©&nbsp;{new Date().getFullYear()}&nbsp;Vítek&nbsp;Petržílek
         </span>
-
         <Link aria-label={'Domů'}  href={'/'}>
             <Signature additionalClasses='relative' height='100%' width='60px' />
         </Link>

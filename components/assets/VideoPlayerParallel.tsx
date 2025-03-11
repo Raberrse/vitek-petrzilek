@@ -1,5 +1,5 @@
 'use client'
-import { projects } from '@/constants';
+import { topThreeProjects, projects } from '@/constants';
 import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
@@ -12,6 +12,7 @@ interface VideoPlayerParallel {
 export default function VideoPlayerParallel({additionalClasses, projectId, defaultRoute = '/'}: VideoPlayerParallel) {
   const router = useRouter()
   const [isClosed, setIsClosed] = useState(false)
+  const allProjects = [...projects, ...topThreeProjects];
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -39,7 +40,7 @@ export default function VideoPlayerParallel({additionalClasses, projectId, defau
             className="absolute top-0 left-0 w-full h-full"
             width={850}
             height={480}
-            src={projects.find(project => project.idPathname === projectId)?.videoLink}
+            src={allProjects.find(project => project.idPathname === projectId)?.videoLink}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

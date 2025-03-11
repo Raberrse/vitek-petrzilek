@@ -364,7 +364,7 @@ export const topThreeProjects = [
       "Promo video mobilní aplikace pro motorkáře.",
     typeDate: "2024 | Reklamní video",
     additionalClasses: " object-[75%] ",
-    videoLink: "https://www.youtube.com/embed/J6GOLj5nWD4?si=dezqDgTAQk1nrlH3",
+    videoLink: "https://www.youtube.com/embed/24Ix6fT6_L8?si=CDeMwr63vy6crHN9",
     idPathname: "riders-track",
   },
   {

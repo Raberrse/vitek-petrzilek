@@ -51,7 +51,7 @@ export default function VideoGallery() {
                     : "grid-cols-2 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-4"
                 } h-screen lg:min-h-[850px] max-lg:h-[1800px]`}
               >
-                {rowProjects.map((project, projectIndex) => (
+                {rowProjects.map((project: any, projectIndex) => (
                   <div
                     key={projectIndex}
                     className={`relative flex-1 ${isLoaded && 'group/container'} ${

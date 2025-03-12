@@ -1,5 +1,5 @@
 'use client'
-import { topThreeProjects, projects } from '@/constants';
+import { allProjects } from '@/constants';
 import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
@@ -12,7 +12,6 @@ interface VideoPlayerParallel {
 export default function VideoPlayerParallel({additionalClasses, projectId, defaultRoute = '/'}: VideoPlayerParallel) {
   const router = useRouter()
   const [isClosed, setIsClosed] = useState(false)
-  const allProjects = [...projects, ...topThreeProjects];
 
   useEffect(() => {
     document.body.style.overflow = "hidden";

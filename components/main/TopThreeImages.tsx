@@ -11,12 +11,12 @@ export default function TopThreeImages() {
   const router = useRouter()
 
   const handleButtonClick = (project: any) => {
-    router.push(`?projekt=${project.idPathname}`, {scroll: false});
+    router.push(`?projekt=${project.idPathname}`);
   }
   
   return (
     <>
-      {topThreeProjects.map((project, index) => (
+      {topThreeProjects.map((project: any, index) => (
         <div
           key={index}
           className={`relative flex-1 ${isLoaded && "group/container"} `}

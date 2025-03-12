@@ -221,7 +221,7 @@ import HrosiStavby from "./public/bg/Morava_1.jpg";
 
 
 
-export const projects = [
+export const allProjects = [
   {
     image: Kolobreh,
     alt: "Kolobřeh paddleboardové závody",
@@ -340,33 +340,6 @@ export const projects = [
     videoLink: "https://www.youtube.com/embed/ynCSr-BItmg?si=FCg8UyI_fYLyF_GA",
     idPathname: "mistrostvi-sveta-v-thajsku",
   },
-  
-  
-];
-
-export const topThreeProjects = [
-  {
-    image: Kolobreh,
-    alt: "Kolobřeh paddleboardové závody",
-    title: "Kolobřeh paddleboardové závody",
-    description:
-      "Závody byly výzva na natočení za přímořských podmínek, větru a deště. Video se i přesto velmi vydařilo!",
-    typeDate: "2023 | Event",
-    additionalClasses: "",
-    videoLink: "https://www.youtube.com/embed/pC8w-qEUHcI?si=IFc7ItKm9_SvqQZQ",
-    idPathname: "kolobreh-paddleboardove-zavody",
-  },
-  {
-    image: RidersTrack,
-    alt: "Riders Track ",
-    title: "Riders Track",
-    description:
-      "Promo video mobilní aplikace pro motorkáře.",
-    typeDate: "2024 | Reklamní video",
-    additionalClasses: " object-[75%] ",
-    videoLink: "https://www.youtube.com/embed/24Ix6fT6_L8?si=CDeMwr63vy6crHN9",
-    idPathname: "riders-track",
-  },
   {
     image: Vyrava,
     alt: "Festival Výrava x MOK",
@@ -374,8 +347,31 @@ export const topThreeProjects = [
     description:
       "Zadání bylo vytvořit dvě reelska do 15s z celého festivalu včetně propagace nahřívacích tabákových jednotek.",
     typeDate: "2023 | Event",
-    additionalClasses: "",
+    additionalClasses: "object-[75%]",
     videoLink: "https://www.youtube.com/embed/24Ix6fT6_L8?si=CDeMwr63vy6crHN9",
     idPathname: "festival-vyrava-x-mok",
   },
+  
+  
 ];
+
+export const topThreeProjects = [
+  allProjects.find(project => project.idPathname === "kolobreh-paddleboardove-zavody"), 
+  allProjects.find(project => project.idPathname === "riders-track"),
+  allProjects.find(project => project.idPathname === "festival-vyrava-x-mok"),
+].filter(Boolean);
+
+
+export const projects = [
+  allProjects.find(project => project.idPathname === "kolobreh-paddleboardove-zavody"),
+  allProjects.find(project => project.idPathname === "riders-track"),
+  allProjects.find(project => project.idPathname === "stanislav"),
+  allProjects.find(project => project.idPathname === "elektricky-lodni-motor"),
+  allProjects.find(project => project.idPathname === "mistrovstvi-cr-v-bezdrev"),
+  allProjects.find(project => project.idPathname === "para-paddleboarding-ct"),
+  allProjects.find(project => project.idPathname === "padlujte-kdekoliv"),
+  allProjects.find(project => project.idPathname === "kvetopady"),
+  allProjects.find(project => project.idPathname === "enteria-byty-thera"),
+  allProjects.find(project => project.idPathname === "hrosi-stavby-morava"),
+  allProjects.find(project => project.idPathname === "mistrostvi-sveta-v-thajsku"),
+].filter(Boolean); 
